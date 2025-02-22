@@ -41,8 +41,6 @@
 </section> -->
 <!-- Slider End -->
 
-
-
 <!-- Slider Start -->
 <section class="hero-slider-section">
     <div id="hero-slider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="true">
@@ -57,7 +55,33 @@
         </div>
 
         <div class="carousel-inner">  
-            <div class="carousel-item active" data-bs-interval="5000">
+        <div class="carousel-item active" data-bs-interval="5000">
+    <img src="/wp-content/uploads/2024/12/roaming-banner-desktop-BM.webp" class="w-100 d-none d-lg-block" alt="...">
+    <img src="/wp-content/uploads/2024/12/roaming-banner-mobile-BM.webp" class="w-100 d-block d-md-block d-lg-none"
+        alt="...">
+    <!-- <article>
+                    <div class="container">
+                        <div class="inner-content-sec">
+                            <div>
+                                <h1>There's more <br>
+                                More places to enjoy<br> YesRoam ASEAN Plus! </h1>
+                                <p>Over 12 global destination.</p>
+                                <div class="btn-sec d-flex align-items-center">
+                                    <div class="pricing-2 align-items-center">
+                                        <h4 class="d-block">
+                                            <sup><span>From<br><b>RM</b></span></sup>10<span
+                                                class="month-sec">/mth</span>
+                                        </h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </article> -->
+</div>
+            <!-- <div class="carousel-item active" data-bs-interval="5000">
             <img src="/wp-content/uploads/2024/06/roam-banner-web.webp" class="w-100 d-none d-lg-block" alt="...">
             <img src="/wp-content/uploads/2024/06/roam-banner-mob.webp" class="w-100 d-block d-md-block d-lg-none" alt="...">
                 <article>
@@ -80,7 +104,7 @@
                         </div>
                     </div>
                 </article>
-            </div>                 
+            </div>-->
 
             <!-- <button class="carousel-control-prev d-none" type="button" data-bs-target="#hero-slider"
                 data-bs-slide="prev">
@@ -123,6 +147,29 @@
     <div class="container">
         <div class="row">
 
+            <!--data-country="Singapore"-->
+        <div data-country="Singapore" style="display:block;">
+                <div class="row mt-3" id="sg-asian-roam-section">
+                    <ul id="sg-myTab" class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button id="sg-dayone-tab" class="s-nav-link right-tab" role="tab" type="button"
+                                data-bs-toggle="tab" data-bs-target="#sg-dayone" aria-controls="sg-dayone"
+                                aria-selected="false">1 Hari</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button id="sg-daythree-tab" class="s-nav-link left-tab" role="tab" type="button"
+                                data-bs-toggle="tab" data-bs-target="#sg-daythree" aria-controls="sg-daythree"
+                                aria-selected="true">3 Hari</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button id="sg-dayseven-tab" class="s-nav-link left-tab" role="tab" type="button"
+                                data-bs-toggle="tab" data-bs-target="#sg-dayseven" aria-controls="sg-dayseven"
+                                aria-selected="true">7 Hari</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <!--Singapore -->
             <div class="col-12 mt-0" data-country="Singapore" style="display: block;">
                 <div style="background:#fff; border-radius: 15px;">
@@ -164,10 +211,10 @@
                                         </div>
                                         <div class="border-b-sec">
                                             <p class="blue mt-3 pt-3">Pilihan Tambahan</p>
-                                            <p class="blue mt-2">YesRoam SG Daily Top-Up</p>
+                                            <p class="blue mt-2" data-daily-topup="sg-daily-topup">YesRoam SG 1-day Top-Up</p>
                                             <p class="blue mt-2">Tanpa Had</p>
-                                            <p class="small">(1GB data berkelajuan tinggi dan 512kbps kemudian)</p>
-                                            <h4 class="blue mt-2">RM8 /<span>sehari</span></h4>
+                                            <p class="small" data-internet-speed="sg-internet-speed">(1GB data berkelajuan tinggi dan 512kbps kemudian)</p>
+                                            <h4 class="blue mt-2" data-internet="sg-internet-rates">RM8</h4>
                                         </div>
                                     </div>
 
@@ -213,7 +260,7 @@
 
             <div class="col-12 mt-3" data-country="Singapore" style="display: block;">
                 <div style="background:#fff; border-radius: 15px;">
-                    <h1 class="raom-logo">
+                    <h1 class="sg-raom-logo-mth">
                         <img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span>SG Daily</span>
                     </h1>
 
@@ -238,23 +285,23 @@
                                     </div>
 
                                     <div class="col-12 col-lg-3">
-                                    <div class="border-b-sec">
-                                        <h3>Kadar Internet</h3>
-                                        <h4 class="internet-rates">
-                                            <span>RM</span>8<sub>/sehari</sub>
-                                        </h4>
-                                      </div>
-                                      <div class="border-b-sec">
-                                        <p class="blue">Perayauan Data Tanpa Had</p>
-                                        <p class="small">(1GB data berkelajuan tinggi dan 512kbps kemudian)</p>
-                                       </div>
-                                       <div class="border-b-sec">
-                                        <p class="blue mt-3 pt-3">Pilihan Tambahan</p>
-                                        <p class="blue mt-2">YesRoam SG Daily Top-Up</p>
-                                        <p class="blue mt-2">Tanpa Had</p>   
-                                        <p class="small">(1GB data berkelajuan tinggi dan 512kbps kemudian)</p> 
-                                        <h4 class="blue mt-2">RM8 /<span>sehari</span></h4>
-                                       </div>
+                                        <div class="border-b-sec">
+                                            <h3>Kadar Internet</h3>
+                                            <h4 class="internet-rates">
+                                                <span data-internet="sg-internet-rates">RM10</span>
+                                            </h4>
+                                        </div>
+                                        <div class="border-b-sec">
+                                            <p class="blue">Perayauan Data Tanpa Had</p>
+                                            <p class="small" data-internet-speed="sg-internet-speed">(1GB data berkelajuan tinggi dan 512kbps kemudian)</p>
+                                        </div>
+                                        <!-- <div class="border-b-sec">
+                                            <p class="blue mt-3 pt-3">Pilihan Tambahan</p>
+                                            <p class="blue mt-2">YesRoam SG Daily Top-Up</p>
+                                            <p class="blue mt-2">Tanpa Had</p>
+                                            <p class="small">(1GB data berkelajuan tinggi dan 512kbps kemudian)</p>
+                                            <h4 class="blue mt-2">RM8</h4>
+                                        </div> -->
                                     </div>
 
                                     <div class="col-12 col-lg-6">
@@ -407,6 +454,7 @@
                                         <h3>Operator Perayauan</h3>
                                         <p class="brand">
                                         <h4 data-name="telcoName" class="blue">Personal</h4>
+                                        <p  data-notice="availability-notice"  class="roaming-operator-notice">* Perkhidmatan perayuan data tidak tersedia di Myanmar sehingga diberitahu atas arahan pihak berkuasa tempatan.</p>
                                         </p>
                                     </div>
 
@@ -657,9 +705,9 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-xl-4 text-center row-roaming-step">
-                                <img alt="deactivate" class="mb-4" src="/wp-content/uploads/2024/06/destinations.png">
-                                <h2>Meliputi 11 Destinasi</h2>
-                                <p>Nikmati kadar ASEAN Plus yang sama untuk 11 destinasi.</p>
+                                <img alt="deactivate" class="mb-4" src="/wp-content/uploads/2024/12/destinations-n.png">
+                                <h2>Meliputi 12 Destinasi</h2>
+                                <p>Nikmati kadar ASEAN Plus yang sama untuk 12 destinasi.</p>
                             </div>
 
                         </div>
@@ -1016,6 +1064,10 @@
                         <img src="/wp-content/uploads/2024/06/Vietnam.png">
                         <h2>Vietnam</h2>
                     </div>
+                    <div class="services-inner">
+                        <img src="/wp-content/uploads/2024/12/South_Korea.png">
+                        <h2>South Korea</h2>
+                    </div>
                 </div>
 
             </div>
@@ -1214,6 +1266,77 @@
                 </div>
             </div>
         </div>
+
+        <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 align-items-center">
+            <div class="idd-use-section">
+                <h2>Cara membuat panggilan menggunakan IDD</h2>
+                <p>Dail 00 atau tambah + sebelum nombor yang anda ingin hubungi.</p>
+                <div class="example-sec">
+                <!-- <img src="/wp-content/uploads/2025/01/dial-example-bm.webp" class="w-100 d-lg-block" alt="..."> -->
+
+                <ul class="ex-cont-sec">
+                <li class="c-code-li">
+                    <span class="c-code">
+                    00 / +
+                     </span>
+                     <span class="c-code">
+                     < Kod Negara >
+                    </span>
+                    </li>                    
+                    <li>
+                    < Kod Kawasan >
+                    </li>
+                    <li>
+                    < Nombor Mudah Alih atau Talian Tetap >
+                    </li>
+                </ul>
+                </div>
+
+                <p class="mt-5">Contoh panggilan IDD ke Korea Selatan.</p>
+                <div class="example-sec-col">
+                <ul class="ex-cont-sec-left">
+                    <li class="list-bg-w">
+                    00
+                    </li>
+                    <li>
+                    82
+                    </li>
+                    <li>
+                    12
+                    </li>
+                    <li>
+                    3456789
+                    </li>
+                  </ul>
+
+                  <span class="or-sec">
+                  ATAU
+                  </span>
+
+                <ul class="ex-cont-sec-right">
+                <li class="list-bg-w">
+                    +
+                    </li>
+                    <li>
+                    82
+                    </li>
+                    <li>
+                    12
+                    </li>
+                    <li>
+                    3456789
+                    </li>
+                </ul>
+                </div>
+                <!-- <img src="/wp-content/uploads/2025/01/idd-example-bm.webp" class="w-100 d-lg-block" alt="..."> -->
+                </div>
+
+            </div>
+        </div>  
+     </div>
+
+
     </div>
 </section>
 <!-- Banner2 End -->
@@ -1360,36 +1483,35 @@
                 <div class="accordion accordion-flush mb-3" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Apakah Perayauan Yes (YesRoam)?
+                        Apakah YesRoam?
                             </button></h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p>Perayauan Yes (YesRoam) memberikan anda data perayauan tanpa had apabila anda disambungkan ke operator rakan perayauan pilihan Yes semasa melancong ke luar negara.</p>
+                                <p>YesRoam menyediakan data perayauan apabila anda berhubung dengan operator perayauan pilihan kami semasa melancong ke luar negara.</p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Bagaimanakah cara untuk saya melanggan Perayauan Yes (YesRoam)?
+                        Bagaimanakah cara saya melanggan pas perayauan data YesRoam?
                             </button></h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush- 
                              headingTwo" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <p>
-                                    Perayauan Yes (YesRoam) adalah tersedia untuk pelanggan Pascabayar Yes. Selepas mengaktifkan servis bagi langgan perayauan, sila pastikan perayauan anda diaktifkan melalui aplikasi MyYes > Perayauan Yes (YesRoam) > Pengaktifan Roaming. Deposit perayauan mungkin diperlukan. Anda akan dilanggan secara automatik sama ada bagi Perayauan Yes (YesRoam) Daily atau Perayauan Yes (YesRoam) Monthly apabila anda tiba di negara yang dilawati dan disambungkan ke operator perayauan pilihan.
+                                Pas data perayauan YesRoam tersedia untuk pelanggan Pascabayar. Bergantung pada pelan Pascabayar anda, Yes 5G telah mencipta pelbagai pas data perayauan YesRoam untuk memenuhi keperluan anda. Anda boleh menyemak pas yang tersedia di <a href="/ms/roaming/">yes.my/roaming</a> atau melalui aplikasi MyYes di bawah ikon “YesRoam”.
                                 </p>
-
-                                <p><b>Nota:</b> <i>Jika anda adalah pengguna talian utama, anda boleh membantu talian tambahan anda untuk mengaktifkan Perayauan Yes (YesRoam) dengan meningkatkan had kredit atau membayar deposit perayauan melalui aplikasi MyYes. Log masuk ke akaun utama > Pilih talian tambahan pada meny pilihan > Klik Lagi > Roaming > Aktifkan Langganan > Tambah Sekarang untuk tingkatkan had kredit atau bayar deposit > Pengaktifan Roaming.</i></p>
+                                <p class="mt-4">Untuk mula menggunakan pas perayauan data YesRoam, anda perlu HIDUPKAN tetapan bagi kedua-dua Data Mudah Alih dan Perayauan Data dalam telefon anda. Anda juga perlu memastikan Perkhidmatan Perayauan Antarabangsa diaktifkan melalui aplikasi MyYes > YesRoam > Aktifkan Perayauan. Deposit perayauan mungkin diperlukan jika anda adalah pelanggan Yes kurang dari 6 bulan. Jika anda adalah pengguna talian utama, anda boleh membantu talian tambahan anda untuk melanggan YesRoam dengan meningkatkan had kredit atau membayar deposit perayauan tambahan melalui aplikasi MyYes untuk melanggan YesRoam. Log masuk ke akaun utama > Tukar ke baris tambahan pada menu akaun > Klik Lagi > Perayauan > Aktifkan Perayauan > Tingkatkan had kredit atau bayar deposit > Aktifkan perayauan.</p>
+                                <p class="mt-4">Terdapat pilihan untuk Pas Perayauan Pra-Tempah yang membolehkan anda menjadualkan pengaktifan pas YesRoam SG atau YesRoam ASEAN Plus sehingga 30 hari lebih awal, dengan pembatalan percuma sehingga 24 jam sebelum tarikh pengaktifan untuk dipilih.</p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Apakah Perayauan Yes (YesRoam) Monthly?</button></h2>
+                        Apakah pas perayauan data YesRoam yang tersedia?</button></h2>
                         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p>Perayauan Yes (YesRoam) Monthly menawarkan data perayauan tanpa had percuma di bwah Pelan Pascabayar Yes Infinite dan Yes Infinite+ Yes. Tawaran ini juga termasuk panggilan masuk percuma dari semua negara dan panggilan keluar percuma ke mana-mana nombor Malaysia semasa berada di negara perayauan. SMS akan dikenakan caj mengikut kadar perayauan di
-                                    <a href="/ms/roaming/">www.yes.my/ms/roaming.</a>
+                                <p>Pas data perayauan YesRoam adalah tiket anda untuk mendapatkan akses internet yang lancar semasa melancong ke luar negara. Tersedia untuk semua pelanggan pelan Pascabayar Yes, pas ini membolehkan anda terus berhubung di negara yang terpilih, tidak kira ke di mana pengembaraan anda. Terokai pas yang sesuai untuk keperluan anda dengan melawati <a href="/ms/roaming/">yes.my/roaming</a> atau hanya melalui aplikasi MyYes dan klik pada ikon 'YesRoam' untuk pilihan terbaik bagi perjalanan anda.
                                 </p>
                             </div>
                         </div>

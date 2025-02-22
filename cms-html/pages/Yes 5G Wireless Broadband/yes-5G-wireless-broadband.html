@@ -149,8 +149,28 @@
     </div>
     <div class="container mt-0">
         <div class="col-12 col-xl-8 col-md-8 mx-auto mt-0">
+
+            <div class="row mt-3 plans-section" id="plans-section">
+
+                <ul id="myTab" class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button id="non-yes-user-tab" class="nav-link right-tab active" role="tab" type="button"
+                            data-bs-toggle="tab" data-bs-target="#non-yes-user" aria-controls="non-yes-user" aria-selected="false">
+                            Not Yes Postpaid User</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button id="yes-user-tab" class="nav-link left-tab" role="tab" type="button" data-bs-toggle="tab"
+                            data-bs-target="#yes-user" aria-controls="yes-user" aria-selected="true">
+                            Yes Postpaid User</button>
+                    </li>
+                </ul>
+
+        <div id="plans-section-card" class="tab-content">
+            <!-- non-yes-user -->
+            <div id="non-yes-user" class="tab-pane fade active show" role="tabpanel" aria-labelledby="non-yes-user-tab">
+
             <div class="row flex-nowrap flex-xl-wrap getway layer-plans">
-                <div class="col-md-6 mb-4 aos-init aos-animate" data-aos="fade-up">
+                <div class="col-md-6 btn-broadband mb-4 aos-init aos-animate" data-aos="fade-up">
                     <div id="myTabContent" class="">
                         <div class="card tab-content">
                             <h3>Gateway</h3>
@@ -167,18 +187,24 @@
                                     <div class="plan-details-list">
                                         <ul>
                                             <li>Uncapped 5G data and speed​</li>
-                                            <li>Uncapped 4G speed (up to 150GB data)​</li>
+                                            <li>Uncapped 4G speed (up to 500GB data)​</li>
                                             <li style="color: #2F3BF5;"><strong>Infinite Gateway PRO Router: RM299</strong><br>&nbsp;&nbsp;&nbsp;(RRP: RM1199)​</li>
                                             <li>7 days return policy​</li>
-                                            <!-- <li><strong>12-month contract</strong></li> -->
+                                            <!-- <li style="color: #000;" class="br-sec">
+                                                Exclusive sooka plans 
+                                            </li>  
+                                            <p class="f-o-more" onclick='window.location.href="//yesmy-dev.azurewebsites.net/sooka";'>Find Out More <img src="/wp-content/uploads/2024/08/arrow-n.png" alt="..." style="width: 8px;" /></p>                                          
+                                             -->
                                         </ul>
                                     </div>
-                                    <div class="price-section">
+                                    <div class="price-section no-flex">
                                         <div class="price-left">
+                                            <!-- <p>Normal Price</p> -->
                                             <h2>RM99<span>/mth</span></h2>
-                                        </div>
-                                        <a href="javascript:void(0)" class="d-none btn-roving btn pink-btn btn-buyplan mt-2" data-planid="4550">Get It Now</a>
-                                        <a href="https://store.yes.my/broadband/add-to-cart/1" class="d-none btn-store btn pink-btn mt-2 btn-getplan btn-getApplePlan " onclick="toggleOverlay()" data-planid="">Get It Now</a>
+                                        </div>                                       
+                                        <!-- <a href="https://yesshop-dev.azurewebsites.net/broadband/add-to-cart/18?contractType=12-months" class="btn-store btn pink-btn mt-2 btn-getplan btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a> -->
+                                        <a href="javascript:void(0)" class="d-none btn-roving btn pink-btn btn-buyplan mt-2" data-planid="">Get It Now</a> 
+                                        <a href="https://yesshop-dev.azurewebsites.net/broadband/add-to-cart/18?contractType=12-months" class="d-none btn-store btn pink-btn mt-2 btn-getplan btn-getApplePlan " onclick="toggleOverlay()" data-planid="">Get It Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -187,30 +213,33 @@
                                     <div class="plan-details-list">
                                         <ul>
                                             <li>Uncapped 5G data and speed</li>
-                                            <li>Uncapped 4G speed (up to 150GB data)</li>
-                                            <li style="color: #2F3BF5;"><strong>FREE Infinite Gateway PRO Router</strong> <br> &nbsp;&nbsp;&nbsp;(RRP: RM1199)</li>
+                                            <li>Uncapped 4G speed (up to 500GB data)</li>
+                                            <li style="color: #2F3BF5;"><strong>FREE Infinite Gateway PRO Router</strong> <br>&nbsp;&nbsp;&nbsp;(RRP: RM1199)</li>
                                             <li>7 days return policy</li>
+                                            <!-- <li style="color: #000;" class="br-sec">
+                                                Exclusive sooka plans 
+                                            </li>
+                                            <p class="f-o-more" onclick='window.location.href="//yesmy-dev.azurewebsites.net/sooka";'>Find Out More <img src="/wp-content/uploads/2024/08/arrow-n.png" alt="..." style="width: 8px;" /></p> -->
                                             <!-- <li>24-month contract​</li> -->
                                             <!-- <div class="d-md-block d-none">&nbsp;</div> -->
                                         </ul>
                                     </div>
-                                    <div class="price-section">
+                                    <div class="price-section no-flex">                                         
                                         <div class="price-left">
+                                            <!-- <p>Normal Price</p> -->
                                             <h2>RM99<span>/mth</span></h2>
                                         </div>
-                                        <a href="javascript:void(0)" class="d-none btn-roving btn pink-btn btn-buyplan mt-2" data-planid="1233">Get It Now</a>
-                                        <a href="https://store.yes.my/broadband/add-to-cart/1" class="d-none btn-store btn btn-getplan pink-btn mt-2 btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a>
-                                    </div>
+                                        <!-- <a href="https://yesshop-dev.azurewebsites.net/broadband/add-to-cart/18?contractType=24-months" class="btn-store btn pink-btn mt-2 btn-getplan btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a> -->
+                                        <a href="javascript:void(0)" class="d-none btn-roving btn pink-btn btn-buyplan mt-2" data-planid="">Get It Now</a> 
+                                        <a href="https://yesshop-dev.azurewebsites.net/broadband/add-to-cart/18?contractType=24-months" class="d-none btn-store btn pink-btn mt-2 btn-getplan btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a>
+                                       
+                                  </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-
                 </div>
-
-                <div class="col-md-6 mb-4 aos-init aos-animate" data-aos="fade-up">
+                <div class="col-md-6 btn-broadband mb-4 aos-init aos-animate" data-aos="fade-up">
                     <div class="card">
                         <div class="card-body">
                             <div class="plan-details-list">
@@ -220,23 +249,80 @@
                                     <li>Uncapped 5G data and speed​​</li>
                                     <li>Uncapped 4G speed (up to 100GB data)</li>
                                     <li>With SIM only</li>
+                                    <!-- <li style="color: #000;" class="br-sec">
+                                        Exclusive sooka plans 
+                                    </li>
+                                    <p class="f-o-more" onclick='window.location.href="//yesmy-dev.azurewebsites.net/sooka";'>Find Out More <img src="/wp-content/uploads/2024/08/arrow-n.png" alt="..." style="width: 8px;" /></p> -->
                                 </ul>
                             </div>
-                            <div class="price-section">
+                            <div class="price-section no-flex">
                                 <div class="price-left">
                                     <h2>RM58<span>/mth</span></h2>
-                                </div>
-                                <a href="javascript:void(0)" class="d-none btn-roving btn pink-btn btn-buyplan mt-2" data-planid="1235">Get It Now</a>
-                                <a href="https://store.yes.my/broadband/add-to-cart/2" class="d-none btn-store btn btn-getplan pink-btn mt-2 btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a>
+                                </div>                                
+                                <!-- <a href="https://yesshop-dev.azurewebsites.net/broadband/add-to-cart/19" class="btn-store btn pink-btn mt-2 btn-getplan btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a> -->
+                                <a href="javascript:void(0)" class="d-none btn-roving btn pink-btn btn-buyplan mt-2" data-planid="">Get It Now</a>
+                                <a href="https://yesshop-dev.azurewebsites.net/broadband/add-to-cart/19" class="d-none btn-store btn btn-getplan pink-btn mt-2 btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
+            <!-- end non-yes-user -->
+
+           <!-- yes-user -->
+            <div id="yes-user" class="tab-pane fade mt-0" role="tabpanel" aria-labelledby="yes-user-tab">
+                
+                <div class="row flex-nowrap flex-xl-wrap getway layer-plans">
+                    <div class="col-md-6 btn-broadband mb-4 m-auto aos-init aos-animate" data-aos="fade-up">
+                        <div id="myTabContent" class="">
+                            <div class="card tab-content">
+                                <h3>Gateway</h3>
+                                <p class="month-text">24-Month</p>
+                                <div class="card-body">
+                                    <div class="plan-details-list">
+                                        <ul>
+                                            <li>Uncapped 5G data and speed</li>
+                                            <li>Uncapped 4G speed (up to 500GB data)</li>
+                                            <li style="color: #2F3BF5;"><strong>FREE Infinite Gateway PRO Router</strong> <br>&nbsp;&nbsp;&nbsp;(RRP: RM1199)</li>
+                                            <li>7 days return policy</li>
+                                            <!-- <li style="color: #000;" class="br-sec">
+                                                Exclusive sooka plans 
+                                            </li>
+                                            <p class="f-o-more" onclick='window.location.href="//yesmy-dev.azurewebsites.net/sooka";'>Find Out More <img src="/wp-content/uploads/2024/08/arrow-n.png" alt="..." style="width: 8px;" /></p> -->
+                                            <!-- <li>24-month contract​</li> -->
+                                            <!-- <div class="d-md-block d-none">&nbsp;</div> -->
+                                        </ul>
+                                    </div>
+                                    <div class="price-section no-flex">
+                                        <div>
+                                        <div class="price-left">
+                                            <!-- <p>Yes postpaid user</p> -->
+                                            <h2>RM75<span>/mth</span></h2>
+                                        </div>
+                                        <!-- <a href="https://yesshop-dev.azurewebsites.net/broadband/add-to-cart/23?contractType=24-months" class="btn-store btn pink-btn mt-2 btn-getplan btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a> -->
+                                        <a href="javascript:void(0)" class="d-none btn-roving btn pink-btn btn-buyplan mt-2" data-planid="">Get It Now</a> 
+                                        <a href="https://yesshop-dev.azurewebsites.net/broadband/add-to-cart/23?contractType=24-months" class="d-none btn-store btn pink-btn mt-2 btn-getplan btn-getApplePlan" onclick="toggleOverlay()" data-planid="">Get It Now</a>
+                                       </div>                                      
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+            </div>
+            <!-- end yes-user -->
+
+        </div>
+            </div>
+
         </div>
         <div class="col-12 col-xl-8 mx-auto mt-4 text-center plan-bottom-link">
-            <p><a href="/coverage/">Check broadband coverage in your area <span class="iconify"
-                        data-icon="akar-icons:arrow-right"></span></a></p>
+            <p><a href="/coverage/">Check broadband coverage in your area <span class="iconify" data-icon="akar-icons:arrow-right"></span></a></p>
             <p>Terms and conditions apply.</p>
         </div>
     </div>

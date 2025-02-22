@@ -543,7 +543,13 @@
         $("[data-button=openRoaming]").click(function() {
             if ($("[name=roamingSelect]").val()) {
                 var cid = $("[name=roamingSelect]").val();
-               
+
+                $(".s-nav-link").removeClass("active");
+                // Add active class to the clicked button
+                $(this).addClass("active");
+                // Add active class to Day One tab specifically
+                $("#sg-dayone-tab").addClass("active");
+
                 $(".nav-link").removeClass("active");
                 // Add active class to the clicked button
                 $(this).addClass("active");
@@ -552,31 +558,54 @@
 
                 var sel = jsonRoaming[cid];
                 var topup = topupOprrators[cid];
-                var countryName= $("[data-name=countryName]").html(sel[0]['country_name']);
-             
-                if(sel[0]['country_name']=="Singapore"){
+                var countryName = $("[data-name=countryName]").html(sel[0]['country_name']);
+
+                if (sel[0]['country_name'] == "Singapore") {
                     $("[data-country=Singapore]").css("display", "block");
                     $("[data-country=OtherCountry]").css("display", "none");
-                }else if(sel[0]['country_name']=="Bahamas"){
-                $("[data-country=Singapore]").css("display", "none");
-                $("[data-country=OtherCountry]").css("display", "block");
-                }else{
+                } else if (sel[0]['country_name'] == "Bahamas") {
+                    $("[data-country=Singapore]").css("display", "none");
+                    $("[data-country=OtherCountry]").css("display", "block");
+                } else {
                     $("[data-country=Singapore]").css("display", "none");
                     $("[data-country=OtherCountry]").css("display", "block");
                 }
-              
 
-            
+
+
                 $roamingTable.empty();
                 $topupRoamingTable.empty();
                 for (var i = 0; i < sel.length; i++) {
                     var cur = sel[i];
-                    console.log(cur);
                     $newTpl = $roamingTemplate.clone();
-                    var telcoName =cur["operatorName"];
+                    var telcoName = cur["operatorName"];
                     if (i > 0) {
                         $roamingTable.append("<hr/>");
                     }
+
+
+                    //Add Notice for myanmar (20-11-2024)
+                    if (cur['country_name'] === "Myanmar") {
+                        $("[data-notice=availability-notice]", $newTpl)
+                            .text("* Data roaming service is not available in Myanmar until further notice, as directed by the local authorities.")
+                            .css("display", "block");
+                    } else if (cur['country_name'] === "Thailand") {
+                        $("[data-notice=availability-notice]", $newTpl)
+                            .text("* Roaming services are unavailable in the regions of Pattani, Yala, Narathiwat, and Songkhla due to government restrictions imposed by Thailand.")
+                            .css("display", "block");
+                    } else if (cur['country_name'] === "India") {
+                        $("[data-notice=availability-notice]", $newTpl)
+                            .text("* Roaming services are unavailable in the state of Jammu & Kashmir due to government restrictions imposed by India.")
+                            .css("display", "block");
+                    } else if (cur['country_name'] === "Australia") {
+                        $("[data-notice=availability-notice]", $newTpl)
+                            .html("* Australia's 3G network shutdown: Stay connected while roaming in Australia by checking your device’s compatibility <a href='https://amta.org.au/3g-closure-old/check-my-device/' target='_blank'>here</a> ahead of your travel.")
+                            .css("display", "block");
+                    } else {
+                        $("[data-notice=availability-notice]", $newTpl).css("display", "none");
+                    }
+
+
 
                     $("[data-name=telcoName]", $newTpl).html(cur["operatorName"]);
                     if (cur["is4g"] == "0") {
@@ -585,102 +614,111 @@
                         $("[data-name=telcoIs4g]", $newTpl).show();
                     }
                     $("[data-name=planDayRateAmt]", $newTpl).html(cur["roamingRate"].replace(".00", "").replace("RM", ""));
-                    $("[data-name=planDayRateSubset]", $newTpl).html(cur["roamingType"]);
-               
-              
-            
-                    if(cur['aseanPlusCountries'] === 'NoDay'){
+                    // $("[data-name=planDayRateSubset]", $newTpl).html(cur["roamingType"]);
+
+                    if (cur['aseanPlusCountries'] !== 'NoDay') {
+                        // console.log($newTpl['roamingRate'],'$newTpl');
+                        $("[data-name=planDayRateSubset]", $newTpl).html("");
+                    } else {
+                        $("[data-name=planDayRateSubset]", $newTpl).html(cur["roamingType"]);
+                    }
+
+                    if (cur['aseanPlusCountries'] === 'NoDay') {
                         var disclaimer = cur["quotaDisclaimer"];
                         var langAttributeValue = $('html').attr('lang');
-                        if ((cur["quota"].trim() == '' && langAttributeValue == 'ms-MY') || langAttributeValue == 'ms-MY' ) {
+                        if ((cur["quota"].trim() == '' && langAttributeValue == 'ms-MY') || langAttributeValue == 'ms-MY') {
                             $("[data-name=planDayRateQuota]", $newTpl).html('Perayauan Data Tanpa Had');
-                            $("[data-name=planDayRateSubset]", $newTpl).html("/sehari");
-                            
+                            // $("[data-name=planDayRateSubset]", $newTpl).html("/sehari");
+
                         } else {
                             $("[data-name=planDayRateQuota]", $newTpl).html(cur["quota"]);
-                            $("[data-name=planDayRateSubset]", $newTpl).html(cur["roamingType"]);
+                            if (cur['aseanPlusCountries'] !== 'NoDay') {
+                                $("[data-name=planDayRateSubset]", $newTpl).html("");
+                            } else {
+                                $("[data-name=planDayRateSubset]", $newTpl).html(cur["roamingType"]);
+                            }
                         }
-                        if (!disclaimer && cur["quota"] && langAttributeValue!='ms-MY') {
+                        if (!disclaimer && cur["quota"] && langAttributeValue != 'ms-MY') {
                             disclaimer = "Once the quota is finished, the data speed will be reduced until your day pass expires without additional cost.";
                             // disclaimer = "(500MB data berkelajuan tinggi dan 64kbps kemudian).";
-                        }
-                        else if(cur["quota"] && langAttributeValue=="ms-MY"){
-                            var DataMB=cur["quota"].split(" ");
+                        } else if (cur["quota"] && langAttributeValue == "ms-MY") {
+                            var DataMB = cur["quota"].split(" ");
                             var storageValue = DataMB[2];
                             var disclaimer = "(" + storageValue + " data berkelajuan tinggi dan 64kbps kemudian).";
                         }
                         $("[data-country='aseanPlusCountry']").css("display", "none")
-                    }else{
+                    } else {
                         $("[data-country='aseanPlusCountry']").css("display", "block")
                         $("[data-name=planDayRateQuota]", $newTpl).html("<p class='unlimitedRoamin'>Unlimited Data Roaming</p>")
                         disclaimer = "(1GB highspeed data and 512kbps thereafter).";
                     }
 
                     $("[data-name=planDayRateTnc]", $newTpl).html(disclaimer);
-                    if(langAttributeValue == "ms-MY"){
-                        var beforeCountryName="Panggilan dalam";
-                    }else{
-                        beforeCountryName="Call Within"
+                    if (langAttributeValue == "ms-MY") {
+                        var beforeCountryName = "Panggilan dalam";
+                    } else {
+                        beforeCountryName = "Call Within"
                     }
-                    $("[data-name=planCallWithinCountryTxt]", $newTpl).html( beforeCountryName  + " "+  sel[i]['country_name']);
+                    $("[data-name=planCallWithinCountryTxt]", $newTpl).html(beforeCountryName + " " + sel[i]['country_name']);
                     $("[data-name=planCallWithinCountryRate]", $newTpl).html(cur["callRate"]);
                     $("[data-name=planCallToOtherCountriesRate]", $newTpl).html(cur["callToOther"]);
                     $("[data-name=planCallToMalaysiRate]", $newTpl).html(cur["callToMalaysia"]);
                     $("[data-name=planReceivingCallRate]", $newTpl).html(cur["receivingCallRate"]);
                     $("[data-name=planSmsRate]", $newTpl).html(cur["smsRate"]);
                     $newTpl.attr('data-asiancountriesdays', cur['aseanPlusCountries']);
+                    // console.log(cur['aseanPlusCountries']);
 
                     // $newTpl.attr('data-countrytitle', cur['aseanPlusCountries']);
                     $("[data-countrytitle=aseanCountryTitle]", $newTpl).html(cur['aseanPlusCountries']);
                     $roamingTable.append($newTpl);
 
-                 // Remove hr if data-asiancountriesdays is not equal to "NoDay"
+                    // Remove hr if data-asiancountriesdays is not equal to "NoDay"
                     if (cur['aseanPlusCountries'] !== 'NoDay') {
                         $roamingTable.find('hr').last().remove();
                     }
-            
+
                     // Initial call to set the default header text based on active tab
                     if (cur['aseanPlusCountries'] !== 'NoDay') {
-                        $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">' + cur['country_name'] + ' ' +'Daily Pass</span>');
+                        $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">' + cur['country_name'] + ' ' + 'Daily Pass</span>');
                     } else {
                         $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span data-title="PAYU">Day Pass</span>');
                     }
-                 
+
                 }
                 $roamingTable.find('[data-asiancountriesdays]').hide();
                 $roamingTable.find('[data-asiancountriesdays="1Day"], [data-asiancountriesdays="NoDay"]').show();
 
 
-                      // Event listener for tab click
-                      $('#dayone-tab').on('click', function() {
-                        if (cur['aseanPlusCountries'] !== 'NoDay') {
-                            $('.asean-storage-val').html('<p class="small" data-name="planDayRateTnc">(1GB highspeed data and 512kbps thereafter).</p>');
-                            $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">' + cur['country_name'] + ' Daily Pass</span>');
-                        } else {
-                            $('.asean-storage-val').html('');
-                            $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">Day Pass</span>');
-                        }
-                    });
+                // Event listener for tab click
+                $('#dayone-tab').on('click', function() {
+                    if (cur['aseanPlusCountries'] !== 'NoDay') {
+                        $('.asean-storage-val').html('<p class="small" data-name="planDayRateTnc">(1GB highspeed data and 512kbps thereafter).</p>');
+                        $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">' + cur['country_name'] + ' Daily Pass</span>');
+                    } else {
+                        $('.asean-storage-val').html('');
+                        $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">Day Pass</span>');
+                    }
+                });
 
-                    $('#daythree-tab').on('click', function() {
-                        if (cur['aseanPlusCountries'] !== 'NoDay') {
-                            $('.asean-storage-val').html('<p class="small" data-name="planDayRateTnc">(5GB highspeed data and 512kbps thereafter).</p>');
-                            $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">' + cur['country_name'] + ' 3 Days Pass</span>');
-                        } else {
-                            $('.asean-storage-val').html('');
-                            $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">Day Pass</span>');
-                        }
-                    });
+                $('#daythree-tab').on('click', function() {
+                    if (cur['aseanPlusCountries'] !== 'NoDay') {
+                        $('.asean-storage-val').html('<p class="small" data-name="planDayRateTnc">(5GB highspeed data and 512kbps thereafter).</p>');
+                        $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">' + cur['country_name'] + ' 3 Days Pass</span>');
+                    } else {
+                        $('.asean-storage-val').html('');
+                        $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">Day Pass</span>');
+                    }
+                });
 
-                    $('#dayseven-tab').on('click', function() {
-                        if (cur['aseanPlusCountries'] !== 'NoDay') {
-                            $('.asean-storage-val').html('<p class="small" data-name="planDayRateTnc">(10GB highspeed data and 512kbps thereafter).</p>');
-                            $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">' + cur['country_name'] + ' 7 Days Pass</span>');
-                        } else {
-                            $('.asean-storage-val').html('');
-                            $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">Day Pass</span>');
-                        }
-                    });
+                $('#dayseven-tab').on('click', function() {
+                    if (cur['aseanPlusCountries'] !== 'NoDay') {
+                        $('.asean-storage-val').html('<p class="small" data-name="planDayRateTnc">(10GB highspeed data and 512kbps thereafter).</p>');
+                        $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">' + cur['country_name'] + ' 7 Days Pass</span>');
+                    } else {
+                        $('.asean-storage-val').html('');
+                        $('#header').html('<img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">Day Pass</span>');
+                    }
+                });
 
 
                 $('#dayone-tab').on('click', function() {
@@ -704,15 +742,15 @@
                 $(document).scrollTop($("[data-fieldset=roaming]").offset().top);
                 $topupTpl = $topupRoamingTemplate.clone();
                 $("[data-name=topupTelcoName]", $topupTpl).html(telcoName);
-               
+
                 const topupAmounts = ["100", "150", "200", "300", "400", "500"];
                 topupAmounts.forEach(amount => {
                     const dataName = `[data-name=topupPlanDayRateAmt_${amount}]`;
                     if (topup[`topup_${amount}mb_per_day`] == 0 || topup[`topup_${amount}mb_per_day`] == "") {
                         $(dataName, $topupTpl).parent().parent().parent().hide();
-                    }else {
-                        
-                        $(dataName, $topupTpl).html('<sub>RM </sub>' +topup[`topup_${amount}mb_per_day`]);
+                    } else {
+
+                        $(dataName, $topupTpl).html('<sub>RM </sub>' + topup[`topup_${amount}mb_per_day`]);
 
                     }
                 });
@@ -720,14 +758,14 @@
                 // Append the modified template to the appropriate container
                 $("[data-country=OtherCountry]").append($topupTpl.show());
                 $("[data-country=OtherCountry] [data-template=topupRoamingTemplate]").replaceWith($topupTpl.show());
-                if((topup['topup_100mb_per_day']=="" || topup['topup_100mb_per_day']== 0 ) && (topup['topup_150mb_per_day']=="" || topup['topup_150mb_per_day']==0 )  &&  (topup['topup_200mb_per_day']=="" || topup['topup_200mb_per_day']==0)  && (topup['topup_300mb_per_day']=="" || topup['topup_300mb_per_day']==0)  && (topup['topup_400mb_per_day']=="" || topup['topup_400mb_per_day']==0) && (topup['topup_500mb_per_day']=="" || topup['topup_500mb_per_day']==0) ){
-                    $('#topUpRoamingTemp').css("display", "none"); 
+                if ((topup['topup_100mb_per_day'] == "" || topup['topup_100mb_per_day'] == 0) && (topup['topup_150mb_per_day'] == "" || topup['topup_150mb_per_day'] == 0) && (topup['topup_200mb_per_day'] == "" || topup['topup_200mb_per_day'] == 0) && (topup['topup_300mb_per_day'] == "" || topup['topup_300mb_per_day'] == 0) && (topup['topup_400mb_per_day'] == "" || topup['topup_400mb_per_day'] == 0) && (topup['topup_500mb_per_day'] == "" || topup['topup_500mb_per_day'] == 0)) {
+                    $('#topUpRoamingTemp').css("display", "none");
                     $("h1 span[data-title='PAYU']").text("Pay As You Use");
                     // if(sel[0]['country_name']=="Bahamas"){
                     // }
-                }else{
-                        $("h1 span[data-title='PAYU']").text("Day Pass"); 
-                    }
+                } else {
+                    $("h1 span[data-title='PAYU']").text("Day Pass");
+                }
             }
         });
 
@@ -790,57 +828,57 @@
 
 
         $('.hero-slider').slick({
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          fade: true,
-          dots: true,
-          autoplay: true,
-          autoplaySpeed: 8000,
-          responsive: [{
-              breakpoint: 1024,
-              settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1,
-                  infinite: true,
-                  dots: true,
-                  arrows: false
-              }
-          }, {
-              breakpoint: 768,
-              settings: {
-                  slidesToShow: 1,
-                  arrows: false,
-                  infinite: true,
-                  dots: true,
-                  slidesToScroll: 1,
-              }
-          }, {
-              breakpoint: 600,
-              settings: {
-                  slidesToShow: 1,
-                  arrows: false,
-                  infinite: true,
-                  dots: true,
-                  slidesToScroll: 1
-              }
-          }, {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  dots: true,
-                  infinite: true,
-                  dots: true,
-                  arrows: false
-              }
-          }]
-      });
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 8000,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            }, {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    infinite: true,
+                    dots: true,
+                    slidesToScroll: 1,
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    infinite: true,
+                    dots: true,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            }]
+        });
 
-      $('.destinations-slider').slick({    
-        prevArrow: '<a href="#" class="slide-arrow prev-arrow slick-arrow"><span class="iconify slick-prev" data-icon="eva:arrow-ios-back-fill"></span></a>',
-            nextArrow: '<a href="#" class="slide-arrow next-arrow slick-arrow"><span class="iconify slick-next" data-icon="eva:arrow-ios-forward-fill"></span></a>',        
+        $('.destinations-slider').slick({
+            prevArrow: '<a href="#" class="slide-arrow prev-arrow slick-arrow"><span class="iconify slick-prev" data-icon="eva:arrow-ios-back-fill"></span></a>',
+            nextArrow: '<a href="#" class="slide-arrow next-arrow slick-arrow"><span class="iconify slick-next" data-icon="eva:arrow-ios-forward-fill"></span></a>',
             infinite: false,
             slidesToShow: 8,
             slidesToScroll: 1,
@@ -889,6 +927,59 @@
             }]
         });
 
+        $(".right-tab").click(function() {
+            $(".pass-section").show();
+        });
+        $(".left-tab").click(function() {
+            $(".pass-section").hide();
+        });
 
+
+
+        //Singapore
+
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Default plan
+        updateRates('1 Day');
+
+        // Tab button elements
+        const tabs = {
+            'sg-dayone-tab': '1 Day',
+            'sg-daythree-tab': '3 Days',
+            'sg-dayseven-tab': '7 Days'
+        };
+
+        // Add click event listeners to each tab
+        Object.keys(tabs).forEach(tabId => {
+            document.getElementById(tabId).addEventListener('click', () => {
+                updateRates(tabs[tabId]);
+            });
+        });
+
+        function updateRates(day) {
+            const ratesInfo = {
+                '1 Day': { rate: 'RM8', speed: '1GB high-speed data and 512kbps thereafter', title: 'SG 1 Day Pass',DailyTopUp:'YesRoam SG 1-day Top-Up' },
+                '3 Days': { rate: 'RM12', speed: '5GB high-speed data and 512kbps thereafter', title: 'SG 3 Days Pass',DailyTopUp:'YesRoam SG 3-days Top-Up' },
+                '7 Days': { rate: 'RM20', speed: '10GB high-speed data and 512kbps thereafter', title: 'SG 7 Days Pass',DailyTopUp:'YesRoam SG 7-days Top-Up' },
+            };
+
+            // Get the current plan information
+            const { rate, speed, title,DailyTopUp } = ratesInfo[day];
+
+            // Update the title in the DOM
+            document.querySelector('.sg-raom-logo-mth span').textContent = title;
+
+            // Update the DOM with the new values for rates and speed
+            const updateElements = (selector, value) => {
+                document.querySelectorAll(selector).forEach(element => {
+                    element.textContent = value;
+                });
+            };
+            updateElements('[data-internet="sg-internet-rates"]', rate);
+            updateElements('[data-internet-speed="sg-internet-speed"]', speed);
+            updateElements('[data-daily-topup="sg-daily-topup"]', DailyTopUp);
+        }
     });
 </script>

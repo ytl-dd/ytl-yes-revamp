@@ -4,7 +4,7 @@
 function add_whatsapp_icon_to_footer() {
     $whatsapp_number = '60183331138'; // Replace with your WhatsApp number
     $whatsapp_message = urlencode('Hello Sofia');
-    $whatsapp_icon_url = get_site_url() . '/wp-content/uploads/2024/06/whatsapp.svg';
+    $whatsapp_icon_url = get_site_url() . '/wp-content/uploads/2024/08/sofia-icon.png';
     ?>
     <style>
         /* Optional: CSS for styling the WhatsApp icon */

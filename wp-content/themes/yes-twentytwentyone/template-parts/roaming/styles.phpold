@@ -374,10 +374,6 @@
     text-transform: uppercase;
 }
 
-
-
-
-
 #countries-section {
     padding: 60px 0px;
 }
@@ -633,170 +629,6 @@
 }
 
 /*end hn*/
-
-
-.idd-use-section{
-    margin:70px 0 0;
-    padding: 0;
-    text-align:center;
-}
-.idd-use-section h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 34px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    color:#000000;
-    margin: 0 0 15px;
-}
-.idd-use-section p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px !important;
-    font-weight: 400 !important;
-    line-height: 24px !important;
-    text-align: center !important;
-    color:#2B2B2B !important;
-}
-.example-sec{
-    margin: 0 0 15px;
-}
-.ex-cont-sec{
-    list-style-type: none;
-    display:flex;
-    justify-content: center;
-    margin:0;
-    padding:0
-}
-
-.ex-cont-sec li{
-    list-style-type: none;    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    text-align: center;
-    color:#000;
-    background: #fff;
-    padding: 15px 15px;
-    border-radius: 8px;
-    margin: 0 5px;
-}
-.ex-cont-sec li:nth-child(1) {
-    padding: 0;
-    margin: 0;
-}
-.c-code-li{
-    background: unset !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.c-code{
-    background: #fff;
-    padding: 15px 15px;
-    border-radius: 8px;
-    margin: 0 5px;
-}
-
-.example-sec-col{
-    margin: 0 0 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.ex-cont-sec-left{
-    list-style-type: none;
-    display:flex;
-    justify-content: center;
-    margin:0;
-    padding:0
-}
-
-.ex-cont-sec-left li{
-    list-style-type: none;    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    text-align: center;
-    color:#000;
-    background: #E8E9ED;
-    padding: 15px 15px;
-    border-radius: 8px;
-    margin: 0 5px;
-}
-.list-bg-w{
-    background: #fff !important;
-}
-.or-sec{margin: 0 10px; font-family: 'Open Sans', sans-serif; font-size: 16px;}
-
-.example-sec-right{
-    margin: 0 0 15px;
-}
-.ex-cont-sec-right{
-    list-style-type: none;
-    display:flex;
-    justify-content: center;
-    margin:0;
-    padding:0
-}
-
-.ex-cont-sec-right li{
-    list-style-type: none;    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    text-align: center;
-    color:#000;
-    background: #E8E9ED;
-    padding: 15px 15px;
-    border-radius: 8px;
-    margin: 0 5px;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
-
-    .idd-use-section p{
-    font-size: 14px !important;}
-    .ex-cont-sec {    
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.ex-cont-sec li {    
-    padding: 15px 15px;
-    border-radius: 12px;
-    margin: 0 5px 10px;
-}
-
-.ex-cont-sec li:nth-child(1){    
-    width: 100%; margin: 0 auto 10px;
-}
-
-.ex-cont-sec li:nth-child(2){    
-    width: 65%; margin: 0 auto 10px;
-}
-.ex-cont-sec li:nth-child(3){    
-    width: 100%;
-    margin: 0 auto 10px;
-}
-.example-sec-col{
-    display:block;
-}
-.ex-cont-sec-left{
-    margin: 0 0 10px;
-}
-.ex-cont-sec-right{
-    margin: 10px 0 0;
-}
-
-}
-
-
-
-
 .questions-head {
     font-family: 'Montserrat';
     font-size: 33px;
@@ -805,6 +637,8 @@
     letter-spacing: -0.02em;
     text-align: center;
 }
+
+
 
 #roaming-tips {
     padding: 60px 0px;
@@ -1385,13 +1219,6 @@
 }
 
 /* singapore roam section end */
-
-.roaming-operator-notice {
-    margin: 25px 0 0;
-    padding: 0;
-    font-size: 14px;
-    font-weight: 500;
-}
 
 /* asian roam section */
 #asian-roam-section{

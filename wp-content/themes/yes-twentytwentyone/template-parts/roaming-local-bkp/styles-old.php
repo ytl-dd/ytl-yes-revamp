@@ -1,5 +1,4 @@
-<style>
-.hero-slider-section {
+<style>.hero-slider-section {
     position: relative;
     background-color: #1A1E47;
 }
@@ -16,7 +15,7 @@
 
 .hero-slider .slick-dots li.slick-active button:before {
     opacity: .75;
-    color: #ff0084 !important;
+    color: #2F3BF5 !important;
 }
 
 .hero-slider.slick-dotted.slick-slider {
@@ -39,7 +38,7 @@
 .hero-slider .inner-content-sec .title-sec {
     position: relative;
     display: block;
-    width: 56%
+    width: 60%
 }
 
 .title-sec img {
@@ -79,7 +78,7 @@
     display: flex;
     position: absolute;
     top: 20%;
-    right: 20%;
+    right: 15%;
 }
 
 .hero-slider .inner-content-sec .pricing h4 {
@@ -118,99 +117,6 @@
     margin: 0;
 }
 
-.hero-slider .inner-content-sec-bm {
-    margin: 0 0 20px;
-    padding: 10px 0 0 4%;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    z-index: 99;
-    width:78%;
-}
-
-.hero-slider .inner-content-sec-bm .title-sec {
-    position: relative;
-    display: block;
-    width: 56%
-}
-
-.title-sec img {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-.hero-slider .inner-content-sec-bm h2 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 42px;
-    text-align: left;
-    letter-spacing: -0.02em;
-    color: #FFF;
-    margin-bottom: 5px;
-    padding: 0;
-}
-
-.hero-slider .inner-content-sec-bm p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: left;
-    color: #ffffff;
-    letter-spacing: -0.02em;
-}
-
-.hero-slider .inner-content-sec-bm .pricing-bm {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #2F3BF5;
-    display: flex;
-    position: absolute;
-    top: 32%;
-    right: 32%;
-}
-
-.hero-slider .inner-content-sec-bm .pricing-bm h4 {
-    color: #FFF;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 50px;
-    padding-top: 5px;
-    letter-spacing: -0.02em;
-}
-
-.hero-slider .inner-content-sec-bm .pricing-bm h4 sup {
-    font-size: 30px;
-}
-
-.hero-slider .inner-content-sec-bm .pricing-bm p {
-    color: #FFF;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    margin: -15px 0;
-    padding: 0;
-}
-
-.hero-slider .inner-content-sec-bm .pricing-bm .month-sec {
-    color: #FFF;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    text-transform: none;
-    text-align: right;
-    padding: 0;
-    margin: 0;
-}
-
-
 .hero-slider .inner-content-sec .pink-btn {
     background-color: #ffffff !important;
     border: 0px solid #ffffff;
@@ -235,7 +141,7 @@
     text-align: left;
     color: #ffffff;
     border-right: 1px solid #fff;
-    width: 18%;
+    width: 23%;
 }
 
 .content-section-mid .content-sec:nth-child(3) {
@@ -370,7 +276,7 @@
     padding: 7px 33px;
     border-radius: 90px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #FF0084 ;
+    background-color: #ED028C;
     color: #FFF;
     text-align: center;
     font-size: 18px;
@@ -424,7 +330,7 @@
 }
 
 #roaming-rates-section {
-    padding: 0px 0px 60px;
+    padding: 60px 0px;
     background-color: #F5F6FA;
 }
 
@@ -455,7 +361,6 @@
     border-bottom: 0px solid #666;
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
-    font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -463,17 +368,12 @@
 }
 
 #roaming-rates-section .row-roaming h4 {
-    font-family: 'Montserrat';
     font-size: 18px;
     font-weight: 800;
 }
-#roaming-rates-section .row-roaming h4 span {
-    font-size: 14px;
-    font-weight: 700;
-}
 
 #roaming-rates-section .row-roaming h4.blue {
-    color: #FF0084 ;
+    color: #ec008c;
 }
 
 #roaming-rates-section .row-roaming h4.internet-rates {
@@ -482,7 +382,7 @@
     line-height: 47px;
     font-weight: 800;
     letter-spacing: -0.02em;
-    color: #FF0084 ;
+    color: #ec008c;
 }
 
 #roaming-rates-section .row-roaming h4.internet-rates span {
@@ -491,19 +391,17 @@
 
 #roaming-rates-section .row-roaming h4.internet-rates sub {
     font-size: 20px;
-    bottom:0;
 }
 
 #roaming-rates-section .row-roaming p.small {
     font-size: 14px;
 }
 
-#roaming-rates-section .row-roaming p.blue {    
-    font-family: 'Open Sans';
+#roaming-rates-section .row-roaming p.blue {
+    color: #000;
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
-    color: #000;
 }
 
 #roaming-rates-section .viewall-btn {
@@ -590,7 +488,7 @@
     letter-spacing: -0.02em;
     text-align: center;
     border-bottom: 1px solid #E8E9ED;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 #roaming-rates-section .roam-topup h4 span {
@@ -601,24 +499,23 @@
 }
 
 #roaming-rates-section .roam-topup h5.blue {
-    color: #FF0084 ;
+    color: #ec008c;
 }
 
 #roaming-rates-section .roam-topup h5.internet-rates {
     font-size: 39px;
     line-height: 47px;
     font-weight: 800;
-    color: #FF0084 ;
+    color: #ec008c;
     letter-spacing: -0.02em;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 #roaming-rates-section .roam-topup h5.internet-rates sub {
     font-size: 23px;
     line-height: 48px;
     font-weight: 800;
-    bottom:0;
 }
 
 #roaming-rates-section .roam-topup p.small {
@@ -647,8 +544,8 @@
     text-align: center;
     color: #000;
     font-weight: 800;
-    font-size: 39px;
-    line-height: 42px;
+    font-size: 49px;
+    line-height: 67px;
     margin-bottom: 50px;
 }
 
@@ -659,10 +556,9 @@
 #start-roaming h1 {
     text-align: center;
     color: #000;
-    font-family: 'Montserrat';
     font-weight: 800;
-    font-size: 39px;
-    line-height: 42px;
+    font-size: 49px;
+    line-height: 67px;
     margin-bottom: 50px;
 }
 
@@ -675,7 +571,7 @@
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    color: #FF0084 ;
+    color: #ED028C;
     text-align: center;
 }
 
@@ -729,7 +625,7 @@
 }
 
 .price-color {
-    color: #FF0084 ;
+    color: #ED028C;
     text-align: left;
 }
 
@@ -745,21 +641,13 @@
 
 .idd-rate {
     font-family: Open Sans;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
-}
-.start-roaming-cont h2 {
-    text-align: left;
-    font-family: 'Montserrat';
-    font-size:16px;
-    font-weight:800;
+    line-height: 24px;
 }
 
 .start-roaming-cont {
-    text-align: left;
-    font-family: 'Open Sans';
-    font-size:14px;
+    text-align: center
 }
 
 #faq-section {
@@ -771,8 +659,8 @@
 
 #faq-section h1 {
     font-size: 33px;
-    font-weight: 800;
-    line-height: 50px;
+    font-weight: 600;
+    line-height: 72px;
     color: #000;
     text-align: center;
 }
@@ -782,9 +670,9 @@
     box-shadow: unset;
     border-radius: 0;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 32px;
     color: #000;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     border-bottom: 1px solid #000;
 }
@@ -857,7 +745,7 @@
 
     .hero-slider .slick-dots li.slick-active button:before {
         opacity: .75;
-        color: #ff0084 !important;
+        color: #2F3BF5 !important;
     }
 
     .hero-slider.slick-dotted.slick-slider {
@@ -925,8 +813,7 @@
     }
 
     .start-roaming-cont {
-        text-align: left;
-        font-size:14px;
+        text-align: left
     }
 }
 
@@ -943,7 +830,7 @@
 
     .hero-slider .slick-dots li.slick-active button:before {
         opacity: .75;
-        color: #ff0084 !important;
+        color: #2F3BF5 !important;
     }
 
     .hero-slider.slick-dotted.slick-slider {
@@ -951,44 +838,22 @@
     }
 
     #roaming-rates-section h1 {
-        font-size: 18px;
-        line-height: 24px;
-        text-align: center;
-    }
-
-    .border-b-sec {
-        border-bottom: 1px solid #CBCBCB;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: 32px;
     }
 
     #roaming-rates-section .roam-topup h2 {
-        font-size: 18px;
-        line-height: 18px;
-    }
-
-    #roaming-rates-section .row-roaming p.blue {
-        font-size: 14px;
+        font-size: 28px;
+        line-height: 32px;
     }
 
     #roaming-rates-section .row-roaming h4 {
-        font-size: 14px;
-    }
-
-    #roaming-rates-section .row-roaming h3 {
-        font-size: 14px;
-        padding: 0;
-        margin: 0;
-        font-weight: 600;
-    }
-
-    p.ctitle {
-        font-size: 13px;
-    }
+    font-size: 16px;
+   }
 
     #roaming-rates-section .roam-topup h3 {
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 28px;
+        line-height: 32px;
     }
 
     .row-roaming .col-8 {
@@ -1012,8 +877,7 @@
     }
 
     .start-roaming-cont {
-        text-align: left;
-        font-size:14px;
+        text-align: left
     }
 
     #start-roaming h1 {
@@ -1030,16 +894,13 @@
     .idd-call-sec h2 span {
         display: none;
     }
-
     .col-8.idd-rate {
-        width: 100%;
-    }
-
+    width: 100%;
+   }
     .idd-rate {
         font-size: 14px;
     }
-
-    .questions-head {
+    .questions-head{
         font-size: 28px;
         line-height: 32px;
     }
@@ -1047,7 +908,6 @@
     .row-roaming-step img {
         float: left;
         margin-right: 10px;
-        width: 60px;
     }
 
     .row-roaming-step p {
@@ -1055,58 +915,6 @@
         font-size: 14px;
         line-height: 18px;
         margin-top: 15px;
-    }
-
-    #roaming-rates-section .roam-topup .operator-sec {
-        margin: 15px 0 0;
-    }
-    #roaming-rates-section .roam-topup .operator-sec h3{
-        font-size: 14px;
-    line-height: 22px;
-    }
-    #roaming-rates-section .roam-topup .operator-sec h4{
-        font-size: 18px;
-    line-height: 18px;
-    }
-    .inner-sec-bg{padding: 15px}
-    .row-roaming{padding: 0 20px 20px;}
-    #roaming-rates-section .roam-topup h4 {
-        font-size: 14px;
-        line-height: 14px;
-        padding-bottom: 10px;
-    }
-    #roaming-rates-section .row-roaming h4.internet-rates {    
-    font-size: 28px;
-    line-height: 35px;
-}
-#roaming-rates-section .row-roaming h4.internet-rates span {
-    font-size: 16px;
-}
-#roaming-rates-section .row-roaming h4.internet-rates sub {
-    font-size: 16px;
-}
-    .roaming-rates-section .roam-topup h4 span {
-        font-size: 12px;
-        line-height: 14px;
-    }
-    #roaming-rates-section .roam-topup h4 span{
-        font-size: 14px;
-    line-height: 18px;
-    font-weight: 500;
-    }
-    .roaming-rates-section .roam-topup h4 br {
-        display: none;
-    }
-
-    #roaming-rates-section .roam-topup h5.internet-rates {
-        font-size: 20px;
-        line-height: 24px;
-        padding-top: 10px;
-    }
-
-    #roaming-rates-section .roam-topup h5.internet-rates sub {
-        font-size: 12px;
-        line-height: 14px;
     }
 
     /* #start-roaming{padding: 0px 0px;} */
@@ -1135,7 +943,6 @@
     #roaming-banner .search-box {
         padding: 0.6rem
     }
-
 
     #faq-section h1 {
         font-size: 26px;
@@ -1194,49 +1001,5 @@
         padding: 7px 12px;
     }
 }
-/* .search-box.dropdown:before {
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-bottom: 2px solid #888;
-    border-left: 2px solid #888;
-    position: absolute;
-    right: 20px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    transform: rotate(315deg);
-}
-
-#roaming-rates-picker_flexselect_dropdown::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 50px;
-}
-#roaming-rates-picker_flexselect_dropdown::-webkit-scrollbar-track {
-  background: #F7F8F9;
-  border-radius: 50px;
-}
-#roaming-rates-picker_flexselect_dropdown::-webkit-scrollbar-thumb {
-  background: #FF0084;
-  border-radius: 50px;
-}
-
-
-#roaming-idd-picker_flexselect_dropdown::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 50px;
-}
-#roaming-idd-picker_flexselect_dropdown::-webkit-scrollbar-track {
-  background: #F7F8F9;
-  border-radius: 50px;
-}
-#roaming-idd-picker_flexselect_dropdown::-webkit-scrollbar-thumb {
-  background: #FF0084;
-  border-radius: 50px;
-}
-
-.roaming-idd-list{
-    width:100%;
-} */
 
 </style>

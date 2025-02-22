@@ -1,0 +1,23 @@
+<script type="text/javascript">
+      $(document).ready(function() {
+            $('.samsung-roi-submit').on('click', function(event) {
+                event.preventDefault();
+
+                // Check if all required fields are filled
+                var fullName = $('#wdform_8_element37').val();
+                var email = $('#wdform_3_element37').val();
+                var contactNumber = $('#wdform_9_element37').val();
+                var preferredDevice = $('#wdform_5_element37').val();
+                var preferredLocation = $('#wdform_6_element37').val();
+
+                if (fullName && email && contactNumber && preferredDevice && preferredLocation) {
+                    // Push event to CleverTap with a general indication
+                    clevertap.event.push("samsung roi page", { Submit: 'True' });
+
+          
+                } else {
+               
+                }
+            });
+        });
+</script>

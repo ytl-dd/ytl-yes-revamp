@@ -44,7 +44,7 @@
 <section class="hero-slider-section">
     <div id="hero-slider" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="true">
         <div class="carousel-indicators">
-           <!-- <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-current="true"
+            <!-- <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
              <button type="button" data-bs-target="#hero-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -53,18 +53,18 @@
 
         </div>
 
-        <div class="carousel-inner">  
-        <div class="carousel-item active" data-bs-interval="5000">
-                <img src="/wp-content/uploads/2024/12/roaming-banner-desktop-n-EN.webp" class="w-100 d-none d-lg-block" alt="...">
-                <img src="/wp-content/uploads/2024/12/roaming-banner-mobile-n-EN.webp" class="w-100 d-block d-md-block d-lg-none"
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="/wp-content/uploads/2024/06/roam-banner-web.webp" class="w-100 d-none d-lg-block" alt="...">
+                <img src="/wp-content/uploads/2024/06/roam-banner-mob.webp" class="w-100 d-block d-md-block d-lg-none"
                     alt="...">
-                <!-- <article>
+                <article>
                     <div class="container">
                         <div class="inner-content-sec">
                             <div>
                                 <h1>There's more <br>
-                                More places to enjoy<br> YesRoam ASEAN Plus! </h1>
-                                <p>Over 12 global destination.</p>
+                                    to <i>SEA</i> with<br>
+                                    Yes Roam ASEAN Plus</h1>
                                 <div class="btn-sec d-flex align-items-center">
                                     <div class="pricing-2 align-items-center">
                                         <h4 class="d-block">
@@ -78,32 +78,8 @@
                             </div>
                         </div>
                     </div>
-                </article> -->
-            </div>
-            <!-- <div class="carousel-item active" data-bs-interval="5000">
-            <img src="/wp-content/uploads/2024/06/roam-banner-web.webp" class="w-100 d-none d-lg-block" alt="...">
-            <img src="/wp-content/uploads/2024/06/roam-banner-mob.webp" class="w-100 d-block d-md-block d-lg-none" alt="...">
-                <article>
-                    <div class="container">
-                        <div class="inner-content-sec">
-                            <div>
-                            <h1>There's more <br>
-                    to <i>SEA</i> with<br>
-                    Yes Roam ASEAN Plus</h1>
-                                <div class="btn-sec d-flex align-items-center">
-                                    <div class="pricing-2 align-items-center">                                        
-                                            <h4 class="d-block">
-                                                <sup><span>From<br><b>RM</b></span></sup>10<span class="month-sec">/mth</span>
-                                            </h4>                                        
-                                    </div>                
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
                 </article>
-            </div>-->
+            </div>
 
             <!-- <button class="carousel-control-prev d-none" type="button" data-bs-target="#hero-slider"
                 data-bs-slide="prev">
@@ -125,7 +101,8 @@
 <section id="roaming-banner">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-11 col-lg-8 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-11 col-lg-8 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="200">
                 <div class="m-auto">
                     <h1>Choose a destination</h1>
                     <p>Check our Data Roaming or Pay-as-you-use rates for your next trip.</p>
@@ -135,7 +112,8 @@
                         <button class="btn" data-button="openRoaming">Check roaming rates</button>
                     </div>
                     <p class="text-center mt-3 browse-btn">
-                        <a href="#pass-section">Browse Roaming Passes <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
+                        <a href="#pass-section">Browse Roaming Passes <span class="iconify"
+                                data-icon="akar-icons:arrow-right"></span></a>
                     </p>
                 </div>
             </div>
@@ -149,8 +127,8 @@
     <div class="container">
         <div class="row">
 
-           <!--data-country="Singapore"-->
-           <div data-country="Singapore" style="display:block;">
+            <!--data-country="Singapore"-->
+            <div data-country="Singapore" style="display:block;">
                 <div class="row mt-3" id="sg-asian-roam-section">
                     <ul id="sg-myTab" class="nav nav-tabs" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -171,6 +149,7 @@
                     </ul>
                 </div>
             </div>
+
 
             <!--Singapore -->
             <div class="col-12 mt-0" data-country="Singapore" style="display: block;">
@@ -215,7 +194,7 @@
                                         </div>
                                         <div class="border-b-sec">
                                             <p class="blue mt-3 pt-3">Add-On Availability</p>
-                                            <p class="blue mt-2" data-daily-topup="sg-daily-topup">YesRoam SG 1-day Top-Up</p>
+                                            <p class="blue mt-2">YesRoam SG Daily Top-Up</p>
                                             <p class="blue mt-2">Unlimited</p>
                                             <p class="small" data-internet-speed="sg-internet-speed">(1GB highspeed data and 512Kbps thereafter)</p>
                                             <h4 class="blue mt-2" data-internet="sg-internet-rates">RM8</h4>
@@ -424,14 +403,20 @@
                 <div class="row mt-3" id="asian-roam-section">
                     <ul id="myTab" class="nav nav-tabs" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button id="dayone-tab" class="nav-link right-tab active" role="tab" type="button" data-bs-toggle="tab" data-bs-target="#dayone" aria-controls="dayone" aria-selected="false">1 Day</button>
+                            <button id="dayone-tab" class="nav-link right-tab active" role="tab" type="button"
+                                data-bs-toggle="tab" data-bs-target="#dayone" aria-controls="dayone"
+                                aria-selected="false">1 Day</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button id="daythree-tab" class="nav-link left-tab" role="tab" type="button" data-bs-toggle="tab" data-bs-target="#daythree" aria-controls="daythree" aria-selected="true">
+                            <button id="daythree-tab" class="nav-link left-tab" role="tab" type="button"
+                                data-bs-toggle="tab" data-bs-target="#daythree" aria-controls="daythree"
+                                aria-selected="true">
                                 3 Days</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button id="dayseven-tab" class="nav-link left-tab" role="tab" type="button" data-bs-toggle="tab" data-bs-target="#dayseven" aria-controls="dayseven" aria-selected="true">
+                            <button id="dayseven-tab" class="nav-link left-tab" role="tab" type="button"
+                                data-bs-toggle="tab" data-bs-target="#dayseven" aria-controls="dayseven"
+                                aria-selected="true">
                                 7 Days</button>
                         </li>
                     </ul>
@@ -443,7 +428,8 @@
             <div class="col-12 mt-3" data-country="OtherCountry">
                 <div style="background:#fff; border-radius: 15px;">
                     <h1 id="header" class="raom-logo">
-                        <img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span data-countrytitle="aseanCountryTitle">Day
+                        <img class="mb-0" src="/wp-content/uploads/2024/06/YesRoam-logo.png" alt="YesRoam" /> <span
+                            data-countrytitle="aseanCountryTitle">Day
                             Pass</span>
                     </h1>
 
@@ -464,17 +450,18 @@
                                         <h3>Roaming Operator</h3>
                                         <p class="brand">
                                         <h4 data-name="telcoName" class="blue">Personal</h4>
-                                        <p  data-notice="availability-notice"  class="roaming-operator-notice">* Data roaming service is not available in Myanmar until further notice, as directed by the local authorities.</p>
-                                        </p>
+                                        </p>                                        
                                     </div>
 
                                     <div class="col-12 col-lg-3 border-b-sec">
                                         <h3>Internet Rates</h3>
                                         <h4 class="internet-rates">
-                                            <span>RM</span><b data-name="planDayRateAmt">38</b><sub data-name="planDayRateSubset">/Day</sub>
+                                            <span>RM</span><b data-name="planDayRateAmt">38</b><sub
+                                                data-name="planDayRateSubset">/Day</sub>
                                         </h4>
                                         <p class="blue mt-3" data-name="planDayRateQuota">Up to 100MB Data</p>
-                                        <p class="small asean-storage-val" data-name="planDayRateTnc">Once the quota is finished, the data
+                                        <p class="small asean-storage-val" data-name="planDayRateTnc">Once the quota is
+                                            finished, the data
                                             speed will
                                             be reduced until your day pass expires without additional cost.</p>
                                     </div>
@@ -636,8 +623,10 @@
                 <p>• Prices shown above are subject to 6% service tax.</p>
                 <!-- <p>• The call rates shown above are not applicable for calls to Premium Numbers, Satellites and special
                     services.</p> -->
-                <p>• The call rates shown above are not applicable for calls to premium numbers, satellites, or special services.</p>
-                <p>• For more information, please contact YesCare via email <a href="mailto:yescare@yes.my">yescare@yes.my</a>.</p>
+                <p>• The call rates shown above are not applicable for calls to premium numbers, satellites, or special
+                    services.</p>
+                <p>• For more information, please contact YesCare via email <a
+                        href="mailto:yescare@yes.my">yescare@yes.my</a>.</p>
                 <h3 class="text-center questions-head mt-3">
                     Got questions?
                 </h3>
@@ -646,7 +635,8 @@
             </div>
         </div>
         <div class="col-12 mt-5 text-center">
-            <a href="#" data-link="closeRoaming" class="pink-btn">Close <span class="iconify" data-icon="carbon:close-filled"></span></a>
+            <a href="#" data-link="closeRoaming" class="pink-btn">Close <span class="iconify"
+                    data-icon="carbon:close-filled"></span></a>
         </div>
     </div>
 </section>
@@ -691,104 +681,107 @@
                             </div>
 
                             <div class="col-12 col-md-6 col-xl-4 text-center row-roaming-step">
-                                <img alt="deactivate" class="mb-4" src="/wp-content/uploads/2024/12/destinations-n.png">
-                                <h2>Across 12 Destinations</h2>
+                                <img alt="deactivate" class="mb-4" src="/wp-content/uploads/2024/06/destinations.png">
+                                <h2>Across 11 Destinations</h2>
                                 <p>Enjoy the same rate for various ASEAN Plus countries.</p>
                             </div>
 
                         </div>
 
-        <div class="row" id="roaming-tips-title">
-            <div class="col-12 mt-0">
-                <h2>
-                    More ways to stay connected with <br>
-                    <img src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="...">                    
-                </h2>
-                <p>
-                    Pre-book your Data Roaming Pass with the MyYes App.                   
-                </p>
-            </div>
-        </div>
-
-        <div class="row mt-5" id="roaming-tips-inner">
-            <div class="col-12 col-xl-12 col-md-12 mx-auto">
-                <div class="row flex-nowrap flex-xl-wrap getway layer-plans">
-                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="plan-details-list">
-                                    <h3>
-                                        Daily Pass
-                                    </h3>
-                                    <p>1 GB</p>
-                                    <ul>
-                                        <li>Unlimited (512kbps after 1GB).</li>
-                                        <li>Customise your activation date up to 30 days in advance.</li>
-                                        <li>Cancel your pass anytime before 2 days from activation.</li>
-                                        
-                                    </ul>
-                                </div>
-                                <div class="price-section">
-                                    <div class="price-left">
-                                        <h2>RM10</h2>
-                                    </div>
-                                </div>
-
+                        <div class="row" id="roaming-tips-title">
+                            <div class="col-12 mt-0">
+                                <h2>
+                                    More ways to stay connected with <br>
+                                    <img src="/wp-content/uploads/2024/06/roam-asian-logo.png" alt="...">
+                                </h2>
+                                <p>
+                                    Pre-book your Data Roaming Pass with the MyYes App.
+                                </p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="plan-details-list">
-                                    <h3>3 Days Pass</h3>
-                                    <p>5 GB</p>
-                                    <ul>
-                                        <li>Unlimited (512kbps after 5GB).</li>
-                                        <li>Customise your activation date up to 30 days in advance.</li>
-                                        <li>Cancel your pass anytime before 2 days from activation.</li>                                        
-                                    </ul>
-                                </div>
-                                <div class="price-section">
-                                    <div class="price-left">
-                                        <h2>                                        
-                                            RM20
-                                        </h2>
+                        <div class="row mt-5" id="roaming-tips-inner">
+                            <div class="col-12 col-xl-12 col-md-12 mx-auto">
+                                <div class="row flex-nowrap flex-xl-wrap getway layer-plans">
+                                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="plan-details-list">
+                                                    <h3>
+                                                        Daily Pass
+                                                    </h3>
+                                                    <p>1 GB</p>
+                                                    <ul>
+                                                        <li>Unlimited (512kbps after 1GB).</li>
+                                                        <li>Customise your activation date up to 30 days in advance.
+                                                        </li>
+                                                        <li>Cancel your pass anytime before 2 days from activation.</li>
+
+                                                    </ul>
+                                                </div>
+                                                <div class="price-section">
+                                                    <div class="price-left">
+                                                        <h2>RM10</h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
 
+                                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="plan-details-list">
+                                                    <h3>3 Days Pass</h3>
+                                                    <p>5 GB</p>
+                                                    <ul>
+                                                        <li>Unlimited (512kbps after 5GB).</li>
+                                                        <li>Customise your activation date up to 30 days in advance.
+                                                        </li>
+                                                        <li>Cancel your pass anytime before 2 days from activation.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price-section">
+                                                    <div class="price-left">
+                                                        <h2>
+                                                            RM20
+                                                        </h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="plan-details-list">
+                                                    <h3>7 Days Pass</h3>
+                                                    <p>10 GB</p>
+                                                    <ul>
+                                                        <li>Unlimited (512kbps after 10GB).</li>
+                                                        <li>Customise your activation date up to 30 days in advance.
+                                                        </li>
+                                                        <li>Cancel your pass anytime before 2 days from activation.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price-section">
+                                                    <div class="price-left">
+                                                        <h2>
+                                                            RM30
+                                                        </h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="plan-details-list">
-                                    <h3>7 Days Pass</h3>
-                                    <p>10 GB</p>
-                                    <ul>                                   
-                                        <li>Unlimited (512kbps after 10GB).</li>
-                                        <li>Customise your activation date up to 30 days in advance.</li>
-                                        <li>Cancel your pass anytime before 2 days from activation.</li>
-                                    </ul>
-                                </div>
-                                <div class="price-section">
-                                    <div class="price-left">
-                                        <h2>
-                                            RM30
-                                        </h2>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
                     </div>
                 </div>
@@ -820,111 +813,111 @@
                             </div>
                         </div>
 
-         <div class="row" id="roaming-tips-title">
-            <div class="col-12 mt-0">
-                <h2>
-                    <!-- More ways to stay connected with <br>
+                        <div class="row" id="roaming-tips-title">
+                            <div class="col-12 mt-0">
+                                <h2>
+                                    <!-- More ways to stay connected with <br>
                     <img src="/wp-content/uploads/2024/05/roam-asian-logo.png" alt="..."> -->
-                    Connect seamlessly in Singapore<br>
-                    with YesRoam SG
-                </h2>
-                <p>
-                    <!-- Pre-book your Data Roaming Pass with the MyYes App. -->
-                    Get the best rates for unlimited roaming with our flexible day passes.
-                </p>
-            </div>
-        </div>
-
-        <div class="row mt-5" id="roaming-tips-inner">
-            <div class="col-12 col-xl-12 col-md-12 mx-auto">
-                <div class="row flex-nowrap flex-xl-wrap getway layer-plans">
-                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="plan-details-list">
-                                    <h3>1 Day Pass
-                                        <!-- Daily Pass -->
-                                    </h3>
-                                    <p>1 GB</p>
-                                    <ul>
-                                        <!-- <li>Unlimited (512kbps after 1GB).</li>
-                                        <li>Customise your activation date up to 30 days in advance.</li>
-                                        <li>Cancel your pass anytime before 2 days from activation.</li> -->
-                                        <li>Unlimited 5G + 4G data for 24 hours upon activation.</li>
-                                        <li>1GB high-speed data, 512kbps thereafter.</li>
-                                        <li>For customers without Infinite Postpaid plan.</li>
-                                    </ul>
-                                </div>
-                                <div class="price-section">
-                                    <div class="price-left">
-                                        <!-- <h2>RM10</h2> -->
-                                        <h2>RM8</h2>
-                                    </div>
-                                </div>
-
+                                    Connect seamlessly in Singapore<br>
+                                    with YesRoam SG
+                                </h2>
+                                <p>
+                                    <!-- Pre-book your Data Roaming Pass with the MyYes App. -->
+                                    Get the best rates for unlimited roaming with our flexible day passes.
+                                </p>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="plan-details-list">
-                                    <h3>3 Days Pass</h3>
-                                    <p>5 GB</p>
-                                    <ul>
-                                        <!-- <li>Unlimited (512kbps after 5GB).</li>
+                        <div class="row mt-5" id="roaming-tips-inner">
+                            <div class="col-12 col-xl-12 col-md-12 mx-auto">
+                                <div class="row flex-nowrap flex-xl-wrap getway layer-plans">
+                                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="plan-details-list">
+                                                    <h3>1 Day Pass
+                                                        <!-- Daily Pass -->
+                                                    </h3>
+                                                    <p>1 GB</p>
+                                                    <ul>
+                                                        <!-- <li>Unlimited (512kbps after 1GB).</li>
                                         <li>Customise your activation date up to 30 days in advance.</li>
                                         <li>Cancel your pass anytime before 2 days from activation.</li> -->
-                                        <li>Unlimited 5G + 4G data for 72 hours upon activation.</li>
-                                        <li>5GB high-speed data, 512kbps thereafter.</li>
-                                        <li>For customers without Infinite Postpaid plan.</li>
-                                    </ul>
-                                </div>
-                                <div class="price-section">
-                                    <div class="price-left">
-                                        <h2>
-                                        RM12
-                                            <!-- RM20 -->
-                                        </h2>
+                                                        <li>Unlimited 5G + 4G data for 24 hours upon activation.</li>
+                                                        <li>1GB high-speed data, 512kbps thereafter.</li>
+                                                        <li>For customers without Infinite Postpaid plan.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price-section">
+                                                    <div class="price-left">
+                                                        <!-- <h2>RM10</h2> -->
+                                                        <h2>RM8</h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="plan-details-list">
-                                    <h3>7 Days Pass</h3>
-                                    <p>10 GB</p>
-                                    <ul>
-                                    <li>Unlimited 5G + 4G data for 168 hours upon activation.</li>
-                                        <li>10GB high-speed data, 512kbps thereafter.</li>
-                                        <li>For customers without Infinite Postpaid plan.</li>
-                                        <!-- <li>Unlimited (512kbps after 10GB).</li>
+                                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="plan-details-list">
+                                                    <h3>3 Days Pass</h3>
+                                                    <p>5 GB</p>
+                                                    <ul>
+                                                        <!-- <li>Unlimited (512kbps after 5GB).</li>
                                         <li>Customise your activation date up to 30 days in advance.</li>
                                         <li>Cancel your pass anytime before 2 days from activation.</li> -->
-                                    </ul>
-                                </div>
-                                <div class="price-section">
-                                    <div class="price-left">
-                                        <h2>
-                                        RM20
-                                            <!-- RM30 -->
-                                        </h2>
-                                    </div>
-                                </div>
+                                                        <li>Unlimited 5G + 4G data for 72 hours upon activation.</li>
+                                                        <li>5GB high-speed data, 512kbps thereafter.</li>
+                                                        <li>For customers without Infinite Postpaid plan.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="price-section">
+                                                    <div class="price-left">
+                                                        <h2>
+                                                            RM12
+                                                            <!-- RM20 -->
+                                                        </h2>
+                                                    </div>
+                                                </div>
 
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mb-4 aos-init aos-animate" data-aos="fade-up">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="plan-details-list">
+                                                    <h3>7 Days Pass</h3>
+                                                    <p>10 GB</p>
+                                                    <ul>
+                                                        <li>Unlimited 5G + 4G data for 168 hours upon activation.</li>
+                                                        <li>10GB high-speed data, 512kbps thereafter.</li>
+                                                        <li>For customers without Infinite Postpaid plan.</li>
+                                                        <!-- <li>Unlimited (512kbps after 10GB).</li>
+                                        <li>Customise your activation date up to 30 days in advance.</li>
+                                        <li>Cancel your pass anytime before 2 days from activation.</li> -->
+                                                    </ul>
+                                                </div>
+                                                <div class="price-section">
+                                                    <div class="price-left">
+                                                        <h2>
+                                                            RM20
+                                                            <!-- RM30 -->
+                                                        </h2>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
 
                     </div>
                 </div>
@@ -1078,10 +1071,6 @@
                     <div class="services-inner">
                         <img src="/wp-content/uploads/2024/06/Vietnam.png">
                         <h2>Vietnam</h2>
-                    </div>
-                    <div class="services-inner">
-                        <img src="/wp-content/uploads/2024/12/South_Korea.png">
-                        <h2>South Korea</h2>
                     </div>
                 </div>
 
@@ -1270,7 +1259,8 @@
 <section id="roaming-banner" class="roaming-bg2">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-11 col-lg-8 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="col-11 col-lg-8 d-flex align-items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="200">
                 <div class="m-auto">
                     <h1>Overseas calls made affordable</span></h1>
                     <p>Check our International Direct Dialling (IDD) rates for the country you’re calling.</p>
@@ -1281,77 +1271,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-     
-     <div class="row justify-content-center">
-        <div class="col-12 col-lg-8 align-items-center">
-            <div class="idd-use-section">
-                <h2>How to make calls using IDD</h2>
-                <p>Dial 00 or add + before the number you want to call.</p>
-                <div class="example-sec">
-                <!-- <img src="/wp-content/uploads/2025/01/dial-example.webp" class="w-100 d-lg-block" alt="..."> -->
-
-                <ul class="ex-cont-sec">
-                    <li class="c-code-li">
-                    <span class="c-code">
-                    00 / +
-                     </span>
-                     <span class="c-code">
-                    < Country Code >
-                    </span>
-                    </li>                    
-                    <li>
-                    < Area Code >
-                    </li>
-                    <li>
-                    < Mobile or Fixed Line Number >
-                    </li>
-                </ul>
-                </div>
-
-                <p class="mt-5">Example of an IDD call to South Korea.</p>
-                <div class="example-sec-col">
-                <ul class="ex-cont-sec-left">
-                    <li class="list-bg-w">
-                    00
-                    </li>
-                    <li>
-                    82
-                    </li>
-                    <li>
-                    12
-                    </li>
-                    <li>
-                    3456789
-                    </li>
-                  </ul>
-
-                  <span class="or-sec">
-                    OR
-                  </span>
-
-                <ul class="ex-cont-sec-right">
-                <li class="list-bg-w">
-                    +
-                    </li>
-                    <li>
-                    82
-                    </li>
-                    <li>
-                    12
-                    </li>
-                    <li>
-                    3456789
-                    </li>
-                </ul>
-                </div>
-                <!-- <img src="/wp-content/uploads/2025/01/idd-example.webp" class="w-100 d-lg-block" alt="..."> -->
-                </div>
-
-            </div>
-        </div>  
-     </div>
-
+        </div> 
     </div>
 </section>
 <!-- Banner2 End -->
@@ -1485,7 +1405,8 @@
                 <p>• IDD calls are charged at 60 seconds block.</p>
 
                 <p>• Rates are subject to change without prior notice.</p>
-                <a href="#" data-button="closeIdd" class="pink-btn mt-5">Close <span class="iconify" data-icon="carbon:close-filled"></span></a>
+                <a href="#" data-button="closeIdd" class="pink-btn mt-5">Close <span class="iconify"
+                        data-icon="carbon:close-filled"></span></a>
             </div>
         </div>
     </div>
@@ -1501,8 +1422,10 @@
         </div>
         <div class="row justify-content-lg-center">
             <div class="col-12 col-lg-12">
-                <img src="/wp-content/uploads/2024/06/roaming-benefits-banner.webp" class="w-100 d-none d-lg-block" alt="...">
-                <img src="/wp-content/uploads/2024/06/roaming-benefits-banner-mob.webp" class="w-100 d-block d-md-block d-lg-none" alt="...">
+                <img src="/wp-content/uploads/2024/06/roaming-benefits-banner.webp" class="w-100 d-none d-lg-block"
+                    alt="...">
+                <img src="/wp-content/uploads/2024/06/roaming-benefits-banner-mob.webp"
+                    class="w-100 d-block d-md-block d-lg-none" alt="...">
             </div>
         </div>
     </div>
@@ -1519,47 +1442,61 @@
             <div class="col-12 col-lg-12">
                 <div class="accordion accordion-flush mb-3" id="accordionFlushExample">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
                                 What is YesRoam?
                             </button></h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p>YesRoam provides data roaming when you connect to our preferred roaming operator while traveling overseas.</p>
+                                <p>YesRoam provides customers unlimited data roaming when you connect to our preferred
+                                    roaming partner while traveling overseas.
+                                    YesRoam is available in certain designated countries.
+                                    For the full list of eligible countries and information on pricing,
+                                    please visit<a href="/roaming/"> yes.my/roaming</a>.</p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        How do I subscribe to YesRoam data roaming passes?
+                        <h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                How do I subscribe to YesRoam?
                             </button></h2>
                         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush- 
                              headingTwo" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
                                 <p>
-                                YesRoam data roaming passes is available to our Postpaid customers. 
-                                Depending on your Postpaid plan, Yes 5G has created various YesRoam data roaming passes to cater to your needs. 
-                                You may check the available passes at <a href="/roaming/">yes.my/roaming</a> or via the MyYes app under the “YesRoam” icon.
-                                <br><br>
-                                To start using a YesRoam data roaming pass, you will need to turn ON both Mobile Data and Data Roaming in your phone settings. 
-                                You will also need to ensure the International Roaming Service is activated via the MyYes app > YesRoam > Activate Roaming. 
-                                A roaming deposit may be required if you are a Yes customer for less than 6 months. 
-                                If you are a principal line user, you may assist your supplementary lines to subscribe YesRoam by increasing 
-                                the credit limit or paying additional roaming deposit via MyYes app to subscribe YesRoam. Login to primary account > Switch to supplementary line in account dropdown > Click More > Roaming > Activate Roaming > Increase credit limit or pay deposit > Activate roaming.<br><br>
- 
-                                There is an option for the Pre-Book Roaming Pass that lets you schedule the activation of 
-                                YesRoam SG or YesRoam ASEAN Plus passes up to 30 days in advance,
-                                with free cancellation up to 24 hours before activation for you to choose.
+                                    YesRoam is available to our Postpaid customers. After enabling the roaming service,
+                                    please ensure your roaming is activated via MyYes app > YesRoam > Activate Roaming.
+                                    A roaming deposit may be required. You will be auto subscribed to either YesRoam
+                                    Daily or YesRoam Monthly when you arrive at the designated country and connect to
+                                    the preferred roaming operator.
+                                    Note: If you are a principal line user, you may assist your supplementary lines to
+                                    activate YesRoam by increasing the credit limit or paying additional roaming deposit
+                                    via MyYes app to activate YesRoam. Login to primary account > Switch to
+                                    supplementary line in account dropdown > Click More > Roaming > Activate Roaming >
+                                    Increase credit limit or pay deposit > Activate roaming.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        What YesRoam data roaming passes are available?</button></h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                What is YesRoam Monthly?</button></h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                             <div class="accordion-body">
-                                <p>YesRoam data roaming passes are your ticket to seamless internet access while traveling abroad. Available to all Yes Postpaid plan subscribers, these passes let you stay connected in eligible countries, no matter where your adventures take you. 
-                                    Explore the perfect pass for your needs by visiting <a href="/roaming/">yes.my/roaming</a> or simply launch the MyYes app and tap on the 'YesRoam' icon to discover the best options for your journey.</p>
+                                <p>YesRoam Monthly offers free unlimited data roaming with our Yes Infinite and Yes
+                                    Infinite+ Postpaid Plans.
+                                    It also includes free incoming calls from any Malaysian number and free outgoing
+                                    calls to any Malaysian number while in the roaming country. SMS is charged as per
+                                    roaming rates at <a href="/roaming/"> yes.my/roaming</a>.
+                                    Customers will enjoy unlimited data roaming starting with 10GB high speed data,
+                                    followed by unlimited data roaming at 512kbps.</p>
                             </div>
                         </div>
                     </div>

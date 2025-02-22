@@ -68,7 +68,7 @@
   /* reuse-class-css-end */
 
   .fleet__hero__section {
-    background: url("https://yesmy-dev.azurewebsites.net/wp-content/uploads/2024/03/yes-fleet-banner-1.png");
+    background: url("/wp-content/uploads/2024/06/yes-fleet-banner-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #14193d;
@@ -373,6 +373,59 @@
         width: 100%;
         height: 307px;
         margin: 0 auto;
+    }
+
+    .fs-webform-container .fserv-container {
+        max-width: 100% !important;
+        margin: 0 auto 30px;
+        padding: 20px 0;
+    }
+    .fs-webform-container .fserv-form {
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+    
+    .fs-webform-container .fserv-form-name {
+        font-size: 24px !important;    
+        font-weight: 700;
+    }
+    
+    .fs-webform-container .fserv-field {
+        padding: 0 20px;
+        width: 50%;
+    }
+    
+    .fs-webform-container .fserv-field+.fserv-field {
+        margin-top: 0 !important;
+    }
+    
+    .fs-webform-container .fserv-field+div:not(.fserv-field) {    
+        text-align: center !important;
+        width: 100%;
+    }
+    .fs-webform-container .fserv-container button[type=submit].fserv-button-submit {   
+        border-radius: 50px;
+    }
+
+    .fs-webform-container .powered-by{
+        display: none !important;
+    }
+    
+    @media (max-width: 768px) {
+    .fs-webform-container .fserv-container {
+        max-width: auto;
+        margin: 0 auto 30px;
+        padding: 20px 0;
+    }
+    .fs-webform-container .fserv-field {
+        padding: 0 20px;
+        width: 100% !important;
+    }
+    .fs-webform-container .fserv-form {
+        display: unset;
+        flex-wrap: unset;
+    }
+    
     }
 
   @media (max-width: 768px) {

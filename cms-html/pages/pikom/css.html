@@ -1,0 +1,334 @@
+<style type="text/css">
+
+    .talk_form {
+        background: #F5F6FA;
+    }
+    
+    .talk_form .fm-form-container.fm-theme1 {
+        width: 100%;
+    }
+    
+    .search-content {
+        color: #000;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+    html body .talk_form .fm-form-container.fm-theme1 .fm-form input[type="text"],
+    body .talk_form .fm-form-container.fm-theme1 .fm-form .ui-corner-all,
+    body .talk_form .fm-form-container.fm-theme1 .fm-form input[type="number"],
+    body .talk_form .fm-form-container.fm-theme1 .fm-form input[type="password"],
+    body .talk_form .fm-form-container.fm-theme1 .fm-form input[type="url"],
+    body .talk_form .fm-form-container.fm-theme1 .fm-form input[type="email"],
+    body .talk_form .fm-form-container.fm-theme1 .fm-form .StripeElement,
+    body .talk_form .fm-form-container.fm-theme1 .fm-form .ui-spinner-input,
+    body .talk_form .fm-form-container.fm-theme1 .fm-form .file-upload-status,
+    body .talk_form .fm-form-container.fm-theme1 .fm-form .country-name,
+    html body .talk_form .fm-form-container.fm-theme1 .fm-form select {
+        font-size: 16px !important;
+        color: #888888;
+        border-radius: 50px !important;
+        height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    html body .talk_form .fm-form-container.fm-theme1 .fm-form select {
+        border-right: 16px solid transparent !important;
+    margin: 10px 0 10px;
+    }
+    
+    html body .talk_form .fm-form-container.fm-theme1 .fm-form textarea {
+        font-size: 16px !important;
+        text-transform: uppercase;
+    }
+    
+    html body .talk_form .fm-form-container.fm-theme1 .fm-form textarea::placeholder {
+        color: #888888 !important;
+    }
+    
+    .form_control input::placeholder {
+        font-size: 16px !important;
+        color: #888888 !important;
+    }
+    
+    body .talk_form .fm-form-container.fm-theme1 .fm-form textarea {
+        border-radius: 20px !important;
+        border: none !important;
+        text-align: center;
+    }
+    
+    .form_control input {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+        padding: 25px 25px !important;
+        font-size: 16px !important;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #888888;
+        background-color: #fff;
+        outline: none !important;
+        letter-spacing: 0.2px;
+        margin: 15px 15px 0 0;
+        border: none !important;
+    }
+    
+    .form_control textarea {
+        display: block;
+        width: 100% !important;
+        padding: 8px 20px !important;
+        font-size: 16px !important;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #888888;
+        background-color: #fff;
+        border-radius: 5px !important;
+        outline: none !important;
+        letter-spacing: 0.2px;
+        margin: 15px 15px 0 0;
+        border: none !important;
+    }
+    
+    .form_control input::placeholder,
+    .form_control textarea::placeholder {
+        color: #888888;
+    }
+    
+    /* .form_control input::placeholder {
+            font-size: 16px !important;
+            color: lightgray !important;
+        } */
+    
+    .form_control input,
+    .form_control select,
+    .form_control textarea {
+        margin: 10px 5px 0 !important;
+    }
+    
+    #form19 .wdform_column {
+        padding: 0 !important;
+    }
+    .fm_empty_margin {
+        margin-top: 0px !important;
+    }
+    
+    .submit button {
+        margin: 20px auto 0 !important;
+        background: #2F3BF5;
+        border: 0px;
+        padding: 0.7rem 2.3rem !important;
+        color: #fff;
+        border-radius: 32px;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    
+    
+    #faq-section {
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0px;
+        background: #fff;
+    }
+    
+    #faq-section h1 {
+        font-size: 33px;
+        font-weight: 600;
+        line-height: 72px;
+        color: #000;
+        text-align: center;
+    }
+    
+    #faq-section .accordion-button {
+        border: none;
+        box-shadow: unset;
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 1px solid #000;
+    }
+    
+    #faq-section .accordion-button::after {
+        opacity: 1;
+    }
+    
+    #faq-section .accordion-button::after {
+        background-image: none;
+        background: url(/wp-content/uploads/2023/10/faq-show.png) no-repeat center center / contain;
+    }
+    
+    #faq-section .accordion-button:not(.collapsed)::after {
+        background-image: none;
+        background: url(/wp-content/uploads/2023/10/faq-hide.png) no-repeat center center / contain !important;
+    }
+    
+    #faq-section .accordion-button:focus {
+        box-shadow: unset;
+    }
+    
+    #faq-section .accordion-body {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    
+    #faq-section .accordion-body h4 {
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 800;
+    }
+    
+    #faq-section .accordion-body ul {
+        margin: 15px 0 0 15px;
+        padding: 0;
+    }
+    
+    #faq-section .accordion-body li {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 32px;
+    }
+    
+    #faq-section .accordion-body p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    
+    #faq-section .viewall-btn {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    
+    @media only screen and (min-device-width: 1600px) {}
+    
+    @media only screen and (max-width: 768px) {
+    
+    
+        #faq-section {
+            padding: 30px 0px !important;
+        }
+    
+        #faq-section h1 {
+            font-size: 26px;
+            line-height: 34px;
+            font-weight: 700;
+        }
+    
+        #faq-section .accordion-item {
+            margin-bottom: 15px;
+        }
+    
+        #faq-section .accordion-button {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+    
+        #faq-section .accordion-body h4 {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 800;
+        }
+    
+        #faq-section .accordion-body ul {
+            margin: 15px 0 0 15px;
+            padding: 0;
+        }
+    
+        #faq-section .accordion-body li {
+            margin: 0;
+            padding: 0 0 5px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    
+        #faq-section .accordion-body p {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    
+        #faq-section .viewall-btn {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+    
+        .mega-dropdown-menu.default-top-menu {
+            padding-left: unset;
+        }
+    }
+    
+    @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+    
+    
+    
+    
+        #faq-section {
+            padding: 30px 0px !important;
+        }
+    
+        #faq-section h1 {
+            font-size: 26px;
+            line-height: 34px;
+            font-weight: 700;
+        }
+    
+        #faq-section .accordion-item {
+            margin-bottom: 15px;
+        }
+    
+        #faq-section .accordion-button {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+    
+        #faq-section .accordion-body h4 {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 800;
+        }
+    
+        #faq-section .accordion-body ul {
+            margin: 15px 0 0 15px;
+            padding: 0;
+        }
+    
+        #faq-section .accordion-body li {
+            margin: 0;
+            padding: 0 0 5px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    
+        #faq-section .accordion-body p {
+            font-size: 13px;
+            line-height: 20px;
+        }
+    
+        #faq-section .viewall-btn {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+    
+        .mega-dropdown-menu.default-top-menu {
+            padding-left: unset;
+        }
+    }
+    
+    </style>

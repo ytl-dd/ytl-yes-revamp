@@ -268,16 +268,16 @@ if (!function_exists('generate_store_locations')) {
         foreach ($arr_list as $state => $stores) {
             $state_name     = ucwords(strtolower($state));
             $html_list      .= '            <div class="col-12 mb-4 layer-state" data-state="' . strtolower($state) . '">
-            <h1 class="mb-4">' . $state_name . '</h1>';
+                                                <h1 class="mb-4">' . $state_name . '</h1>';
 
 
             foreach ($stores as $data) {
 
                 $services   = $data['Services'];
-                $services = str_replace(array('experience-stores', 'service-stores'), array('stores', 'stores'), $services);
+                $services   = str_replace(array('service-stores'), array('stores'), $services);
 
                 $store_type     = $data['Store Type'];
-                $store_type = str_replace(array('Experience Store', 'Store & Service Centre'), array('Store', 'Store'), $store_type);
+                $store_type     = str_replace(array('Store & Service Centre'), array('Store'), $store_type);
                 $store_brand    = ($data['Brand']) ? $data['Brand'] : '';
                 $store_address  = $data['Address'];
                 $operating_hour = $data['Operation Hour'];
@@ -414,6 +414,7 @@ if (!function_exists('generate_store_locations')) {
                                                                 <ul class="dropdown-menu" aria-labelledby="dropdownStoreTypes" data-filter-type="store-type">
                                                                     <li><div class="form-check"><label><input class="cardCheckBoxAll" type="checkbox" value="All" data-filter-type="store-type" checked /> ' . esc_html__('All', 'yes.my') . '</label></div></li>
                                                                     <li><div class="form-check"><label><input class="cardCheckBox store-type" type="checkbox" value="yes-stores" data-storetype="Yes Stores" checked /> <span>Yes Stores</span></label></div></li>
+                                                                    <li><div class="form-check"><label><input class="cardCheckBox store-type" type="checkbox" value="yes-experience-stores" data-storetype="Yes Experience Stores" checked /> <span>Yes Experience Stores</span></label></div></li>
                                                                     <li><div class="form-check"><label><input class="cardCheckBox store-type" type="checkbox" value="yes-exclusive-stores" data-storetype="Yes Exclusive Stores" checked /> <span>Yes Exclusive Stores</span></label></div></li>
                                                                     <li><div class="form-check"><label><input class="cardCheckBox store-type" type="checkbox" value="dealer-mynews" data-storetype="Dealer MyNews" checked /> <span>Dealer MyNews</span></label></div></li>
                                                                 </ul>
@@ -773,7 +774,7 @@ if (!function_exists('yes_business_slider_callback')) {
                 letter-spacing: -0.02em;
                 text-align: left;
                 color: #1a1e47;
-                max-width: 500px;
+                max-width: unset; /**500px;/ */
             }
 
             #business-solutions-section .business-solutions-carousel {
@@ -810,14 +811,14 @@ if (!function_exists('yes_business_slider_callback')) {
 
             #business-solutions-section .layer-planDevice h2 {
                 font-family: "Montserrat";
-                font-size: 28px;
+                font-size: 26px;
                 font-weight: 600;
-                line-height: 34px;
+                line-height: 32px;
                 letter-spacing: -0.011em;
                 text-align: left;
                 margin-bottom: 10px;
                 color: #000;
-                height: 70px;
+                height: 90px;
                 padding: 0;
             }
 
@@ -830,7 +831,7 @@ if (!function_exists('yes_business_slider_callback')) {
                 text-align: left;
                 color: #000;
                 height: 100px;
-                max-width: 210px;
+                max-width: 240px;
             }
 
             #business-solutions-section .layer-planDevice p.panel-deviceImg {
@@ -995,8 +996,7 @@ if (!function_exists('yes_business_slider_callback')) {
                                     <?php echo esc_html__('With unlimited & Uncapped 5G, this is unbeatably the fastest connectivity to take your business a step ahead.', 'yes.my'); ?>
                                 </p>
                                 <p class="panel-btn">
-                                    <a href="/business/yes-biz-wireless-broadband/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?>
-                                        <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
+                                    <a href="/business/yes-biz-wireless-broadband/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?><span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                                 </p>
                             </div>
                             <p class="panel-deviceImg">
@@ -1013,8 +1013,7 @@ if (!function_exists('yes_business_slider_callback')) {
                                     <?php echo esc_html__('Malaysia\'s Most Affordable Unlimited 5G Mobile Plans to stay connected anytime, anywhere.', 'yes.my'); ?>
                                 </p>
                                 <p class="panel-btn">
-                                    <a href="/mobile-plan/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?>
-                                        <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
+                                    <a href="/mobile-plan/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?><span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                                 </p>
                             </div>
                             <p class="panel-deviceImg">
@@ -1031,8 +1030,7 @@ if (!function_exists('yes_business_slider_callback')) {
                                     <?php echo esc_html__('Dedicated connectivity supporting point-to-point line and data links.', 'yes.my'); ?>
                                 </p>
                                 <p class="panel-btn">
-                                    <a href="/business/internet-access/yes-dia/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?>
-                                        <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
+                                    <a href="/business/internet-access/yes-dia/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?><span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                                 </p>
                             </div>
                             <p class="panel-deviceImg">
@@ -1049,8 +1047,7 @@ if (!function_exists('yes_business_slider_callback')) {
                                     <?php echo esc_html__('Dedicated fixed bandwidth data connection with high network availability.', 'yes.my'); ?>
                                 </p>
                                 <p class="panel-btn">
-                                    <a href="/business/private-network/yes-dedicated-leased-line/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?>
-                                        <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
+                                    <a href="/business/private-network/yes-dedicated-leased-line/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?><span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                                 </p>
                             </div>
                             <p class="panel-deviceImg">
@@ -1067,8 +1064,7 @@ if (!function_exists('yes_business_slider_callback')) {
                                     <?php echo esc_html__('Voice over IP (VolP) service to handle high call volume with ease.', 'yes.my'); ?>
                                 </p>
                                 <p class="panel-btn">
-                                    <a href="/business/voice-communication/yes-sipconnect/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?>
-                                        <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
+                                    <a href="/business/voice-communication/yes-sipconnect/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?><span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                                 </p>
                             </div>
                             <p class="panel-deviceImg">
@@ -1085,8 +1081,7 @@ if (!function_exists('yes_business_slider_callback')) {
                                     <?php echo esc_html__('Secure data sharing for your business at all times.', 'yes.my'); ?>
                                 </p>
                                 <p class="panel-btn">
-                                    <a href="/business/private-network/private-5g/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?>
-                                        <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
+                                    <a href="/business/private-network/private-5g/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?><span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                                 </p>
                             </div>
                             <p class="panel-deviceImg">
@@ -1103,8 +1098,7 @@ if (!function_exists('yes_business_slider_callback')) {
                                     <?php echo esc_html__('Dedicated private network for your business to stay connected wirelessly 24/7.', 'yes.my'); ?>
                                 </p>
                                 <p class="panel-btn">
-                                    <a href="/business/private-network/yes-vpn/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?>
-                                        <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
+                                    <a href="/business/private-network/yes-vpn/" class=""><?php echo esc_html__('Learn More', 'yes.my'); ?><span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                                 </p>
                             </div>
                             <p class="panel-deviceImg">
@@ -1174,8 +1168,6 @@ if (!function_exists('yes_business_slider_callback')) {
 }
 
 // iphone comparison plan section
-
-
 function fetch_and_display_google_sheet_data($atts)
 {
     $start_time = microtime(true); // Start timing
@@ -1259,25 +1251,24 @@ function fetch_and_display_google_sheet_data($atts)
     $selected_contract = isset($_GET['contract']) ? $_GET['contract'] : (count($contracts) > 0 ? $contracts[0] : '');
     $selected_plan_range = isset($_GET['plan_range']) ? $_GET['plan_range'] : (count($plan_ranges) > 0 ? $plan_ranges[0] : '');
 
-
-
     // HTML for dropdown form   
-
-    $output = '<style>.rangedisable {
-           background-color: transparent !important;
-            opacity: 0.2 !important;
-        }
-            .form-select:disabled{
-            background-color: transparent !important;
-            }
-            .prepaid-card .prepaid-card-detail .prepaid-card-list .n-Avail{
-                margin: 34% 0 !important;
-            }
-                .prepaid-card{
-                    padding-bottom: 30px !important;
-                }
-  </style><link rel="stylesheet" id="iphone-comparison-css" href="/wp-content/themes/yes-twentytwentyone/assets/css/iphone-comparison_new1.css" type="text/css" media="all" />
-    <form method="GET" id="filterForm">';
+    $output = ' <style type="text/css">
+                    .rangedisable {
+                    background-color: transparent !important;
+                        opacity: 0.2 !important;
+                    }
+                    .form-select:disabled{
+                    background-color: transparent !important;
+                    }
+                    .prepaid-card .prepaid-card-detail .prepaid-card-list .n-Avail{
+                        margin: 34% 0 !important;
+                    }
+                    .prepaid-card{
+                        padding-bottom: 30px !important;
+                    }
+                </style>
+                <link rel="stylesheet" id="iphone-comparison-css" href="/wp-content/themes/yes-twentytwentyone/assets/css/iphone-comparison_new1.css" type="text/css" media="all" />
+                <form method="GET" id="filterForm">';
 
     $output .= '<section class="plan-section">';
     $output .= '<div class="container">';
@@ -1431,7 +1422,6 @@ function fetch_and_display_google_sheet_data($atts)
     $output .= '<button type="submit" style="display: none;">Filter</button>';
     $output .= '</form>';
 
-
     // Add loading overlay div
     $output .= '<div id="loading-overlay"></div>';
 
@@ -1442,7 +1432,6 @@ function fetch_and_display_google_sheet_data($atts)
 
     // Initial load of cards
     $output .= '<div class="row pricingW flex-nowrap flex-xl-wrap justify-content-lg-center plan-details-sec d-none" id="filterResults">' . generateFilteredResults($telco_data, $selected_device, $selected_contract, $selected_plan_range) . '</div>';
-
 
     $output .= '<div class="row mt-0 mt-md-5">';
     $output .= '<div class="col-xl-12 col-lg-12 col-md-12 text-center" style="position: relative;">';
@@ -1460,293 +1449,285 @@ function fetch_and_display_google_sheet_data($atts)
     $output .= '</div>';
     $output .= '</section>';
     $siteURL = "https://www.yes.my/iphone16-comparison/";
-    $output .= '<div id="share-modal" class="share-modal" style="display:none;">
-    <div class="share-modal-content">
-        <!-- Cross button -->
-        <span class="close" id="close-modal">&times;</span>
-        
-        <h2>Share This</h2>
-        
-        <!-- Social media share icons -->
-        <div class="share-options">
-            <!-- Embed icon -->
-             <!-- <a href="https://www.facebook.com/sharer/sharer.php?quote='.urlencode('Compare the best iPhone 16 prices before you buy!').'%0A'.urlencode($siteURL).'" target="_blank">
-                <img src="https://www.yes.my/wp-content/uploads/2024/09/facebook-icon.png" alt="Share on Facebook" />
-                <span>Facebook</span>
-            </a>-->
-             <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.yes.my/iphone16-comparison/" target="_blank" class="fb-comparison">
-       <img src="https://www.yes.my/wp-content/uploads/2024/09/facebook-icon.png" alt="Share on Facebook">
-        <span>Facebook</span>
-    </a>
-             <a href="https://wa.me/?text='.urlencode('Compare the best iPhone 16 prices before you buy!').'%0A'.urlencode($siteURL).'" target="_blank" class="wa-comparison">
-                <img src="/wp-content/uploads/2024/09/whatsapp-icon.png" alt="Share on WhatsApp" />
-                <span>WhatsApp</span>
-            </a>
-            <a href="https://x.com/intent/tweet?text='.urlencode('Compare the best iPhone 16 prices before you buy!').'%0A'.urlencode($siteURL).'" target="_blank" class="x-comparison">
-                <img src="https://www.yes.my/wp-content/uploads/2024/09/x-icon.png" alt="Share on X" />
-                <span>X</span>
-            </a>
-            <a href="https://t.me/share/url?text='.urlencode('Compare the best iPhone 16 prices before you buy!').'%0A'.urlencode($siteURL).'" target="_blank" class="t-comparison">
-                <img src="https://www.yes.my/wp-content/uploads/2024/09/telegram-icon.png" alt="Share on Telegram" />
-                <span>Telegram</span>
-            </a>
-        </div>
-        
-        <!-- YouTube-style copy link input -->
-        <div class="share-link">
-            <input type="text" id="share-url" value="'.$siteURL.'" readonly />
-            <button id="copy-link">Copy</button>
-        </div>
+    $output .= '    <div id="share-modal" class="share-modal" style="display:none;">
+                        <div class="share-modal-content">
+                            <!-- Cross button -->
+                            <span class="close" id="close-modal">&times;</span>
+                            
+                            <h2>Share This</h2>
+                            
+                            <!-- Social media share icons -->
+                            <div class="share-options">
+                                <!-- Embed icon -->
+                                <!-- <a href="https://www.facebook.com/sharer/sharer.php?quote=' . urlencode('Compare the best iPhone 16 prices before you buy!') . '%0A' . urlencode($siteURL) . '" target="_blank">
+                                    <img src="https://www.yes.my/wp-content/uploads/2024/09/facebook-icon.png" alt="Share on Facebook" />
+                                    <span>Facebook</span>
+                                </a>-->
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.yes.my/iphone16-comparison/" target="_blank" class="fb-comparison">
+                                    <img src="https://www.yes.my/wp-content/uploads/2024/09/facebook-icon.png" alt="Share on Facebook">
+                                    <span>Facebook</span>
+                                </a>
+                                <a href="https://wa.me/?text=' . urlencode('Compare the best iPhone 16 prices before you buy!') . '%0A' . urlencode($siteURL) . '" target="_blank" class="wa-comparison">
+                                    <img src="/wp-content/uploads/2024/09/whatsapp-icon.png" alt="Share on WhatsApp" />
+                                    <span>WhatsApp</span>
+                                </a>
+                                <a href="https://x.com/intent/tweet?text=' . urlencode('Compare the best iPhone 16 prices before you buy!') . '%0A' . urlencode($siteURL) . '" target="_blank" class="x-comparison">
+                                    <img src="https://www.yes.my/wp-content/uploads/2024/09/x-icon.png" alt="Share on X" />
+                                    <span>X</span>
+                                </a>
+                                <a href="https://t.me/share/url?text=' . urlencode('Compare the best iPhone 16 prices before you buy!') . '%0A' . urlencode($siteURL) . '" target="_blank" class="t-comparison">
+                                    <img src="https://www.yes.my/wp-content/uploads/2024/09/telegram-icon.png" alt="Share on Telegram" />
+                                    <span>Telegram</span>
+                                </a>
+                            </div>
+                            
+                            <!-- YouTube-style copy link input -->
+                            <div class="share-link">
+                                <input type="text" id="share-url" value="' . $siteURL . '" readonly />
+                                <button id="copy-link">Copy</button>
+                            </div>
 
-        <!-- Embed section (initially hidden) -->
-        <div id="embed-section" class="embed-section" style="">
-            <h2>Embed Code</h2>
-            <div>
-                <textarea id="embed-code"><iframe src=\'https://www.yes.my/iframe-iphone-comparison/?v=126\' width=\'100%\' height=\'400\' frameborder=\'0\'></iframe></textarea>
-                <button id="copy-embed">Copy</button>
-            </div>
-        </div>
-    </div>
-</div>';
+                            <!-- Embed section (initially hidden) -->
+                            <div id="embed-section" class="embed-section" style="">
+                                <h2>Embed Code</h2>
+                                <div>
+                                    <textarea id="embed-code"><iframe src=\'https://www.yes.my/iframe-iphone-comparison/?v=126\' width=\'100%\' height=\'400\' frameborder=\'0\'></iframe></textarea>
+                                    <button id="copy-embed">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>';
 
 
 
     // JavaScript for AJAX
-    $output .= '
-    <script>
-
+    $output .= '<script>
             $(document).ready(function () {
                 // On page load, trigger the filterData function
                 filterData();
             });
-        function showPlanDetails(telco_id, plan_index) {
-            // Hide all plans and costs
-            document.querySelectorAll(`[id^="${telco_id}-plan"], [id^="${telco_id}-cost"], [id^="${telco_id}-summary"]`).forEach(function(el) {
-                el.style.display = "none";
-                el.classList.remove("iphone_active_plan", "iphone_active_cost", "iphone_active_summary");
-            });
+            function showPlanDetails(telco_id, plan_index) {
+                // Hide all plans and costs
+                document.querySelectorAll(`[id^="${telco_id}-plan"], [id^="${telco_id}-cost"], [id^="${telco_id}-summary"]`).forEach(function(el) {
+                    el.style.display = "none";
+                    el.classList.remove("iphone_active_plan", "iphone_active_cost", "iphone_active_summary");
+                });
 
-            // Show selected plan and cost
-            if (plan_index !== "") {
-                document.getElementById(`${telco_id}-cost-${plan_index}`).style.display = "block";
-                document.getElementById(`${telco_id}-cost-${plan_index}`).classList.add("iphone_active_cost");
+                // Show selected plan and cost
+                if (plan_index !== "") {
+                    document.getElementById(`${telco_id}-cost-${plan_index}`).style.display = "block";
+                    document.getElementById(`${telco_id}-cost-${plan_index}`).classList.add("iphone_active_cost");
 
-                document.getElementById(`${telco_id}-plan-${plan_index}`).style.display = "block";
-                document.getElementById(`${telco_id}-plan-${plan_index}`).classList.add("iphone_active_plan");
-                
-
-                const summaryElement = document.getElementById(`${telco_id}-summary-${plan_index}`);
-                if (summaryElement) {
-                    summaryElement.style.display = "block";
-                    summaryElement.classList.add("iphone_active_summary");
-                }
-                resetPrice();
-            }
-        }
-
-        function resetPrice(){
-            var yesPrice = $(".iphone_active_cost:first").data("price");
-            if (typeof yesPrice === "string") {
-                yesPrice = yesPrice.replace(/,/g, "");
-            }
-            
-            $(".iphone_active_cost").each(function() {
-                // This refers to the current element in the loop
-                var el = $(this);
-                var total_price = el.data("price");
-                if (typeof total_price === "string") {
-                    total_price = total_price.replace(/,/g, "");
-                }
-                var priceDifference = (total_price - yesPrice);
-                console.log(priceDifference);
-                if( priceDifference > 0 ) {
-                    el.parent().find(".iphone_active_summary").html("<p>Save up to RM"+priceDifference.toLocaleString()+" with Yes 5G<p>");    
-                }else{
-                    el.parent().find(".iphone_active_summary").html("");
-                }
-            });
-        }
-
-        function filterData() {
-            const device = document.getElementById("device").value;
-            const contract = document.getElementById("contract").value;
-            // const planRange = document.getElementById("plan_range").value;
-
-                const planRangeElement = document.getElementById("plan_range");
-                if (contract === "No Contract") {
-                    // Loop through options to remove selected attribute from all options
-                    for (let option of planRangeElement.options) {
-                        option.selected = false; // Remove selected attribute from all options
-                    }
-                    // Set the last option ("> RM 150") as selected and disable it
-                    planRangeElement.disabled = true;
-                    const planRangeLiElement = $("#plan_range").parents("li");
-                    planRangeLiElement.addClass("rangedisable");
+                    document.getElementById(`${telco_id}-plan-${plan_index}`).style.display = "block";
+                    document.getElementById(`${telco_id}-plan-${plan_index}`).classList.add("iphone_active_plan");
                     
-                    planRangeElement.options[2].selected = false; // Assuming its the third option
-                    planRangeElement.options[0].disabled = false;
-                    planRangeElement.options[1].disabled = false; // Disable the last option
-                } else {
-                    // Enable the last option if contract is not "No Contract"
-                    planRangeElement.disabled = false;
-                    const planRangeLiElement = $("#plan_range").parents("li");
-                    planRangeLiElement.removeClass("rangedisable");
 
-                    // planRangeElement.options[0].selected = true;
-                    planRangeElement.options[0].disabled = false;
-                    planRangeElement.options[1].disabled = false;
-                    planRangeElement.options[2].disabled = false;
+                    const summaryElement = document.getElementById(`${telco_id}-summary-${plan_index}`);
+                    if (summaryElement) {
+                        summaryElement.style.display = "block";
+                        summaryElement.classList.add("iphone_active_summary");
+                    }
+                    resetPrice();
                 }
+            }
 
-                const planRange = planRangeElement.value;
-            
-            // Show loading SVG
-            toggleOverlay(true);
-            // document.getElementById("loading").style.display = "block";
-
-            // AJAX call to refresh the filtered data
-            const xhr = new XMLHttpRequest();
-            xhr.open("GET", "' . '/wp-content/themes/yes-twentytwentyone/includes/iphone_compare.php' . '?action=fetch_filtered_data&device=" + encodeURIComponent(device) + "&contract=" + encodeURIComponent(contract) + "&plan_range=" + encodeURIComponent(planRange), true);
-            xhr.onload = function() {
-                // Hide loading SVG
-                // document.getElementById("loading").style.display = "none";
-                  document.getElementById("loading-overlay").style.display = "none";
-                   toggleOverlay(false);
-
-                if (xhr.status === 200) {
-                    document.getElementById("filterResults").innerHTML = xhr.responseText; // Replace results
-                    resetPrice()
-                    const pricingCards = document.querySelectorAll(".pricingW.flex-nowrap.flex-xl-wrap.justify-content-lg-center.plan-details-sec.d-none");
-                        pricingCards.forEach(card => {
-                            card.classList.remove("d-none"); // Remove the hide-card class
-                        });
-                } else {
-                    console.error("Error fetching data");
+            function resetPrice(){
+                var yesPrice = $(".iphone_active_cost:first").data("price");
+                if (typeof yesPrice === "string") {
+                    yesPrice = yesPrice.replace(/,/g, "");
                 }
-            };
-            xhr.send();
-        }
-               document.getElementById("share-button").addEventListener("click", function(event) {
-    event.preventDefault();
-    document.getElementById("share-modal").style.display = "flex";
-    });
+                
+                $(".iphone_active_cost").each(function() {
+                    // This refers to the current element in the loop
+                    var el = $(this);
+                    var total_price = el.data("price");
+                    if (typeof total_price === "string") {
+                        total_price = total_price.replace(/,/g, "");
+                    }
+                    var priceDifference = (total_price - yesPrice);
+                    if( priceDifference > 0 ) {
+                        el.parent().find(".iphone_active_summary").html("<p>Save up to RM"+priceDifference.toLocaleString()+" with Yes 5G<p>");    
+                    }else{
+                        el.parent().find(".iphone_active_summary").html("");
+                    }
+                });
+            }
 
-    document.getElementById("close-modal").addEventListener("click", function() {
-        document.getElementById("share-modal").style.display = "none";
-    });
+            function filterData() {
+                const device = document.getElementById("device").value;
+                const contract = document.getElementById("contract").value;
+                // const planRange = document.getElementById("plan_range").value;
 
-    // Close modal when clicking outside
-    window.onclick = function(event) {
-        if (event.target == document.getElementById("share-modal")) {
+                    const planRangeElement = document.getElementById("plan_range");
+                    if (contract === "No Contract") {
+                        // Loop through options to remove selected attribute from all options
+                        for (let option of planRangeElement.options) {
+                            option.selected = false; // Remove selected attribute from all options
+                        }
+                        // Set the last option ("> RM 150") as selected and disable it
+                        planRangeElement.disabled = true;
+                        const planRangeLiElement = $("#plan_range").parents("li");
+                        planRangeLiElement.addClass("rangedisable");
+                        
+                        planRangeElement.options[2].selected = true; // Assuming its the third option
+                        planRangeElement.options[0].disabled = false;
+                        planRangeElement.options[1].disabled = false; // Disable the last option
+                    } else {
+                        // Enable the last option if contract is not "No Contract"
+                        planRangeElement.disabled = false;
+                        const planRangeLiElement = $("#plan_range").parents("li");
+                        planRangeLiElement.removeClass("rangedisable");
+
+                        // planRangeElement.options[2].selected = false;
+                        planRangeElement.options[0].disabled = false;
+                        planRangeElement.options[1].disabled = false;
+                        planRangeElement.options[2].disabled = false;
+                    }
+
+                    const planRange = planRangeElement.value;
+                
+                // Show loading SVG
+                toggleOverlay(true);
+                // document.getElementById("loading").style.display = "block";
+
+                // AJAX call to refresh the filtered data
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", "' . 'https://www.yes.my/wp-content/themes/yes-twentytwentyone/includes/iphone_compare.php' . '?action=fetch_filtered_data&device=" + encodeURIComponent(device) + "&contract=" + encodeURIComponent(contract) + "&plan_range=" + encodeURIComponent(planRange), true);
+                xhr.onload = function() {
+                    // Hide loading SVG
+                    // document.getElementById("loading").style.display = "none";
+                    document.getElementById("loading-overlay").style.display = "none";
+                    toggleOverlay(false);
+
+                    if (xhr.status === 200) {
+                        document.getElementById("filterResults").innerHTML = xhr.responseText; // Replace results
+                        resetPrice()
+                        const pricingCards = document.querySelectorAll(".pricingW.flex-nowrap.flex-xl-wrap.justify-content-lg-center.plan-details-sec.d-none");
+                            pricingCards.forEach(card => {
+                                card.classList.remove("d-none"); // Remove the hide-card class
+                            });
+                    } else {
+                        console.error("Error fetching data");
+                    }
+                };
+                xhr.send();
+            }
+        document.getElementById("share-button").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("share-modal").style.display = "flex";
+        });
+
+        document.getElementById("close-modal").addEventListener("click", function() {
             document.getElementById("share-modal").style.display = "none";
-        }
-    };
+        });
 
-    // Copy URL to clipboard
-    document.getElementById("copy-link").addEventListener("click", function() {
-        var copyText = document.getElementById("share-url");
-        copyText.select();
-        document.execCommand("copy");
-        alert("Link copied to clipboard!");
-    });
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target == document.getElementById("share-modal")) {
+                document.getElementById("share-modal").style.display = "none";
+            }
+        };
 
-    // Handle embed icon click
+        // Copy URL to clipboard
+        document.getElementById("copy-link").addEventListener("click", function() {
+            var copyText = document.getElementById("share-url");
+            copyText.select();
+            document.execCommand("copy");
+            alert("Link copied to clipboard!");
+        });
+
+        // Handle embed icon click
 
 
-    // Copy embed code to clipboard
-    document.getElementById("copy-embed").addEventListener("click", function() {
-        var embedCode = document.getElementById("embed-code");
-        embedCode.select();
-        document.execCommand("copy");
-        alert("Embed code copied to clipboard!");
-    });
+        // Copy embed code to clipboard
+        document.getElementById("copy-embed").addEventListener("click", function() {
+            var embedCode = document.getElementById("embed-code");
+            embedCode.select();
+            document.execCommand("copy");
+            alert("Embed code copied to clipboard!");
+        });
 
-    // Hide embed section and show share-link div when modal is closed
-    document.getElementById("close-modal").addEventListener("click", function() {
-        document.getElementById("embed-section").style.display = "none"; // Hide embed section
-        document.querySelector(".share-link").style.display = "block"; // Show share-link div
-    });
+        // Hide embed section and show share-link div when modal is closed
+        document.getElementById("close-modal").addEventListener("click", function() {
+            document.getElementById("embed-section").style.display = "none"; // Hide embed section
+            document.querySelector(".share-link").style.display = "block"; // Show share-link div
+        });
     </script>';
 
     $output .= '<style>
-        /* Position loader absolutely in the center */
-    
-    .share-modal {
-        position: fixed;
-        z-index: 9999;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.5);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+                    /* Position loader absolutely in the center */
+                    .share-modal {
+                        position: fixed;
+                        z-index: 9999;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0,0,0,0.5);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
 
-    .share-modal-content {
-        background-color: white;
-        padding: 20px;
-        border-radius: 10px;
-        text-align: center;
-    }
+                    .share-modal-content {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 10px;
+                        text-align: center;
+                    }
 
-    .share-options a {
-        display: block;
-        margin: 10px 0;
-        text-decoration: none;
-        color: #0073aa;
-    }
+                    .share-options a {
+                        display: block;
+                        margin: 10px 0;
+                        text-decoration: none;
+                        color: #0073aa;
+                    }
 
-    .share-options a:hover {
-        text-decoration: underline;
-    }
+                    .share-options a:hover {
+                        text-decoration: underline;
+                    }
 
-    .close {
-        position: absolute;
-        top: 10px;
-        right: 20px;
-        font-size: 24px;
-        cursor: pointer;
-    }
+                    .close {
+                        position: absolute;
+                        top: 10px;
+                        right: 20px;
+                        font-size: 24px;
+                        cursor: pointer;
+                    }
 
-    #copy-link {
-        background-color: #0073aa;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
+                    #copy-link {
+                        background-color: #0073aa;
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 5px;
+                    }
 
-    #copy-link:hover {
-        background-color: #005580;
-    }
+                    #copy-link:hover {
+                        background-color: #005580;
+                    }
 
-    @media (max-width:768px){
-            .share-icon-sec{
-            margin: 10px auto 0 !important;
-            }
-            .plan-section{
-            padding:0 !important;
-            }
-            .plan-details-sec{
-            margin:20px 0 !important;
-            overflow: auto;
-            } 
-            .plan-section h2{
-            line-height:40px !important;
-            margin:10px 0 0 !important;
-            } 
-            .container, .container-sm {
-            max-width: 100% !important;
-        }
-            
-    }
-        </style>';
-
-
-
+                    @media (max-width:768px){
+                            .share-icon-sec{
+                            margin: 10px auto 0 !important;
+                            }
+                            .plan-section{
+                            padding:0 !important;
+                            }
+                            .plan-details-sec{
+                            margin:20px 0 !important;
+                            overflow: auto;
+                            } 
+                            .plan-section h2{
+                            line-height:40px !important;
+                            margin:10px 0 0 !important;
+                            } 
+                            .container, .container-sm {
+                            max-width: 100% !important;
+                        }
+                    }
+                </style>';
 
     return $output;
 }
@@ -1758,23 +1739,17 @@ add_action('wp_ajax_fetch_filtered_data', 'handle_filtered_data');
 add_action('wp_ajax_nopriv_fetch_filtered_data', 'handle_filtered_data');
 
 
-
-
 add_action('rest_api_init', function () {
     register_rest_route('iphone-comparison/v1', '/data', array(
         'methods' => 'GET',
         'callback' => 'iphone_comparison_data',
     ));
 });
+
 function iphone_comparison_data()
 {
     die('sadf');
 }
-
-
-
-
-
 
 function handle_filtered_data()
 {
@@ -1839,8 +1814,6 @@ function handle_filtered_data()
     wp_die(); // Required for AJAX requests in WordPress
 }
 
-
-
 function generateFilteredResults($telco_data, $device, $contract, $plan_range)
 {
     $output = '';
@@ -1870,30 +1843,31 @@ function generateFilteredResults($telco_data, $device, $contract, $plan_range)
                                             <select class="form-select" onchange="showPlanDetails(\'' . $telco_id . '\', this.value)">';
 
             foreach ($plans as $index => $plan_data) {
-                $output .= '<option value="' . $index . '">' . htmlspecialchars($plan_data['plan']) . '</option>';
+                $output .= '                    <option value="' . $index . '">' . htmlspecialchars($plan_data['plan']) . '</option>';
             }
 
-            $output .= '</select></div>';
+            $output .= '                    </select>
+                                        </div>';
 
             foreach ($plans as $index => $plan_data) {
                 $planDisplay = ($index === 0) ? 'block' : 'none';
-                $output .= '<div class="prepaid-card-list" id="' . $telco_id . '-plan-' . $index . '" style="display: ' . $planDisplay . ';">
-                                <ul>
-                                    <li><span class="l-text ' . htmlspecialchars($telco) . '">Plan</span>
-                                        <span class="r-price"><b>RM</b> ' . htmlspecialchars($plan_data['plan_price']) . ' <b>/ mth</b></span>
-                                    </li>
-                                    <li><span class="l-text ' . htmlspecialchars($telco) . '">Device</span>
-                                        <span class="r-price"><b>RM</b> ' . htmlspecialchars($plan_data['device_price']) . ' <b>/ mth</b></span>
-                                    </li>
-                                    <li><span class="l-text ' . htmlspecialchars($telco) . '">Total</span>
-                                        <span class="r-price"><b>RM</b> ' . htmlspecialchars($plan_data['total_price']) . ' <b>/ mth</b></span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div data-price="' . htmlspecialchars($plan_data['total_cost']) . '" class="total-price-sec ' . ($index === 0 ? 'iphone_active_cost' : '') . '" id="' . $telco_id . '-cost-' . $index . '" style="display: ' . $planDisplay . ';">
-                                <h2 class="l-text ' . htmlspecialchars($telco) . '"><b>RM</b>&nbsp;' . htmlspecialchars($plan_data['total_cost']) . '</h2>
-                                <p class="l-text ' . htmlspecialchars($telco) . '">Total Cost of Ownership</p>
-                            </div>';
+                $output .= '            <div class="prepaid-card-list" id="' . $telco_id . '-plan-' . $index . '" style="display: ' . $planDisplay . ';">
+                                            <ul>
+                                                <li><span class="l-text ' . htmlspecialchars($telco) . '">Plan</span>
+                                                    <span class="r-price"><b>RM</b> ' . htmlspecialchars($plan_data['plan_price']) . ' <b>/ mth</b></span>
+                                                </li>
+                                                <li><span class="l-text ' . htmlspecialchars($telco) . '">Device</span>
+                                                    <span class="r-price"><b>RM</b> ' . htmlspecialchars($plan_data['device_price']) . ' <b>/ mth</b></span>
+                                                </li>
+                                                <li><span class="l-text ' . htmlspecialchars($telco) . '">Total</span>
+                                                    <span class="r-price"><b>RM</b> ' . htmlspecialchars($plan_data['total_price']) . ' <b>/ mth</b></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div data-price="' . htmlspecialchars($plan_data['total_cost']) . '" class="total-price-sec ' . ($index === 0 ? 'iphone_active_cost' : '') . '" id="' . $telco_id . '-cost-' . $index . '" style="display: ' . $planDisplay . ';">
+                                            <h2 class="l-text ' . htmlspecialchars($telco) . '"><b>RM</b>&nbsp;' . htmlspecialchars($plan_data['total_cost']) . '</h2>
+                                            <p class="l-text ' . htmlspecialchars($telco) . '">Total Cost of Ownership</p>
+                                        </div>';
 
                 // Summary information
                 $summary = trim(implode(' ', array_filter([$plan_data['summary_k'], $plan_data['summary_l'], $plan_data['summary_m']])));
@@ -1914,7 +1888,6 @@ function generateFilteredResults($telco_data, $device, $contract, $plan_range)
     return $output;
 }
 
-
 function renderNoPlans($telco_id, $telco)
 {
     return '
@@ -1924,7 +1897,7 @@ function renderNoPlans($telco_id, $telco)
                 <div class="prepaid-card-detail-cont yes-details">
                     <div class="section-head ' . htmlspecialchars($telco_id) . '">
                         <h5>' . htmlspecialchars($telco) . '</h5>
-                        <h6>–</h6>
+                        <h6>-</h6>
                     </div>
                     <div class="prepaid-card-list">
                         <div class="n-Avail">
@@ -1955,8 +1928,6 @@ function filterTelcoData($telco_data, $device, $contract, $plan_range)
     return $filtered_data;
 }
 
-
-
 add_action('wp', 'set_header_for_iframe');
 
 function set_header_for_iframe()
@@ -1964,4 +1935,325 @@ function set_header_for_iframe()
     if (is_page(53159)) {
         header("Content-Security-Policy: frame-ancestors *");
     }
+}
+
+
+/*Coverage upgrade page code*/
+
+if (!function_exists('coverage_expansion_shortcode')) {
+    function coverage_expansion_shortcode()
+{
+    wp_enqueue_style('select2-css', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css');
+    wp_enqueue_script('select2-js', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js', array('jquery'), null, true);
+    ob_start(); ?>
+    <section id="coverage-area">
+    <h2><?php _e('Coverage upgrade locations', 'coverage-yes.my'); ?></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 m-auto">
+                    <div class="box">
+                        <ul class="by_default">
+                            <li>
+                                <div class="sharing">
+                                    <div class="share-icon">
+                                        <img src="/wp-content/uploads/2024/11/location-icon.svg" alt="...">
+                                    </div>
+                                    <p>
+                                        <select id="state" name="state" class="form-select">
+                                            <!-- Populated via JavaScript -->
+                                        </select>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 m-auto">
+                    <div id="coverage-results" class="result-section">
+                        <!-- Results populated dynamically here -->
+                    </div>
+ 
+                    <!-- "Show More" Arrow Icon -->
+                    <a id="show-more" class="moreless-button" href="javascript:void(0);" style="display: none;">
+                        <img src="/wp-content/uploads/2024/11/arrow-down-icon.svg" alt="down arrow" class="arrow-down">
+                        <img src="/wp-content/uploads/2024/11/arrow-up-icon.svg" alt="up arrow" class="arrow-up" style="display: none;">
+                    </a>
+                    <p style="margin-top: 35px; font-family: Open Sans; font-size: 18px; font-style: italic; font-weight: 400; line-height: 24px; text-align: center;">
+                    <?php _e('NOTE: Upgrade times and dates are tentative and may be subject to change.', 'coverage-yes.my'); ?></p>
+
+                </div>
+            </div>
+        </div>
+ 
+        <!-- Loader overlay -->
+        <div id="loader-overlay" style="display: none;">
+            <img src="https://cdn.yes.my/site/wp-content/uploads/2024/01/img-loading2.svg" alt="loading" class="loader">
+        </div>
+    </section>
+ 
+    <script>
+        jQuery(document).ready(function($) {
+            function toggleOverlay(show) {
+                $('#loader-overlay').toggle(show);
+            }
+            function loadStatesAndSelectFirst() {
+                toggleOverlay(true);
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "<?php echo get_template_directory_uri(); ?>/includes/campaigns/load_coverage_data.php", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.onload = function() {
+                    toggleOverlay(false);
+                    if (xhr.status === 200) {
+                        var states = JSON.parse(xhr.responseText);
+                        $.each(states, function(index, state) {
+                            $('#state').append('<option value="' + state + '">' + state + '</option>');
+                        });
+                        $('#state').val($('#state option:first').val()).trigger('change');
+                    } else {
+                        alert("Error loading states.");
+                    }
+                };
+                xhr.send("action=load_coverage_data&load_states=true");
+            }
+ 
+            // Initialize Select2
+            $('#state').select2({
+                width: '100%'
+            });
+
+            loadStatesAndSelectFirst();
+ 
+            // Automatically load results when a state is selected
+            $('#state').on('change', function() {
+                var state = $(this).val();
+                if (state) {
+                    toggleOverlay(true);
+ 
+                    const xhr = new XMLHttpRequest();
+                    xhr.open("POST", "<?php echo get_template_directory_uri(); ?>/includes/campaigns/load_coverage_data.php", true);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.onload = function() {
+                        toggleOverlay(false);
+                        if (xhr.status === 200) {
+                            $('#coverage-results').html(xhr.responseText);
+                            var allCards = $('#coverage-results .result-inner-section');
+                            var totalCards = allCards.length;
+
+                            if (totalCards > 0) {
+                                allCards.first().show(); // Make sure the first card is visible
+                            }
+ 
+                            if (totalCards > 2) {
+                                allCards.slice(2).hide();
+                                $('#show-more').show();
+                            } else {
+                                $('#show-more').hide();
+                            }
+                        } else {
+                            alert("Error loading coverage data.");
+                        }
+                    };
+                    xhr.send("action=load_coverage_data&selected_state=" + encodeURIComponent(state));
+                } else {
+                    $('#coverage-results').empty();
+                    $('#show-more').hide(); 
+                }
+            });
+ 
+            $('#show-more').on('click', function() {
+                var arrowDown = $('.arrow-down');
+                var arrowUp = $('.arrow-up');
+                var allCards = $('#coverage-results .result-inner-section');
+                var totalCards = allCards.length;
+ 
+                // If "Show More" is clicked, show all cards and switch to "Show Less"
+                if (arrowDown.is(':visible')) {
+                    allCards.show(); // Show all remaining cards
+                    arrowDown.hide();
+                    arrowUp.show();
+                } else {
+                    // If "Show Less" is clicked, hide all cards except the first 2
+                    allCards.slice(2).hide();
+                    arrowDown.show();
+                    arrowUp.hide();
+                }
+            });
+        });
+    </script>
+ 
+ <style>
+
+        .select2-container--default .select2-selection--single {
+            background-color: transparent;
+            border: 0px solid #aaa !important;
+            border-radius: 0 !important;
+        }
+        .result-inner-section .result-right-sec ul li p{
+            background-color: transparent;
+        }
+
+        /* Loader styling */
+        #loader-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #loader-overlay img{
+            width: 150px;
+
+        }
+        
+ 
+        /* Styling for "Show More" button */
+        .moreless-button {
+            display: inline;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+ 
+        .arrow-down,
+        .arrow-up {
+            width: 20px;
+            height: 20px;
+        }
+ 
+        #coverage-results .result-inner-section:gt(1) {
+            display: none;
+            /* Hide all cards except the first 2 initially */
+        }
+    </style>
+ 
+ 
+<?php
+    return ob_get_clean();
+}
+add_shortcode('coverage_expansion', 'coverage_expansion_shortcode');
+     
+     
+function load_coverage_data() {
+    // $URL="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1gMVF9iNNiYJPY0n2LzQsmV2FjslUFyHb_EcT1LikYgo-N6nwH12CWpR6MC3n9Q/pub?gid=1597758861&single=true&output=csv";
+    $URL="https://docs.google.com/spreadsheets/d/1MQ4OuDuqL-5975zHiZs1m9rEfLloiAm-r4OcPon28Ts/pub?gid=0&single=true&output=csv";
+    $cache_file = get_template_directory() . '/cache/coverage_data_cache.csv'; // Path to cache file
+    $csvUrl = defined('RAN_COVERAGE_NETWORK') ? RAN_COVERAGE_NETWORK : $URL;
+
+    if (file_exists($cache_file) && filemtime($cache_file) > time() - 86400) {
+        // Load data from cached CSV file if it's still valid
+        $csvData = array_map('str_getcsv', file($cache_file, FILE_SKIP_EMPTY_LINES | FILE_IGNORE_NEW_LINES));
+        $header = array_shift($csvData); // Remove the header row
+        $groupedData = [];
+
+        foreach ($csvData as $row) {
+            if (count($row) == count($header)) {
+                $dataRow = array_combine($header, $row);
+                $state = trim($dataRow['State']);
+                $title = $dataRow['Upcoming Coverage Expansion Area Title'];
+                $states[$state] = true;
+                $groupedData[$state][$title][] = $dataRow;
+            }
+        }
+    } else {
+        // Fetch data from Google Sheets and parse it
+        $csvData = file_get_contents($csvUrl);
+
+        $rows = array_map('str_getcsv', explode("\n", $csvData));
+        $header = array_shift($rows);
+        $groupedData = [];
+
+        $csvContent = [];
+        $csvContent[] = implode(',', array_map('addslashes', $header)); // Add header to CSV content, escape special characters
+
+        foreach ($rows as $row) {
+            if (count($row) == count($header)) {
+                $dataRow = array_combine($header, array_map('addslashes', $row)); // Escape special characters
+                $state = trim($dataRow['State']);
+                $title = $dataRow['Upcoming Coverage Expansion Area Title'];
+                $states[$state] = true;
+                $groupedData[$state][$title][] = $dataRow;
+
+                // Add row to CSV content
+                $csvContent[] = implode(',', array_map('addslashes', $row)); // Escape special characters
+            }
+        }
+
+        // Save the fresh data to cache as a CSV file
+        file_put_contents($cache_file, implode("\n", $csvContent));
+    }
+
+    if (isset($_POST['load_states'])) {
+        echo json_encode(array_keys($groupedData));
+    } elseif (isset($_POST['selected_state']) && $_POST['selected_state']) {
+        $selectedState = sanitize_text_field($_POST['selected_state']);
+        $site_url = "https://yesmy-dev.azurewebsites.net";
+        if (isset($groupedData[$selectedState])) {
+            ob_start();
+            foreach ($groupedData[$selectedState] as $title => $areas) {
+                echo '<div class="result-inner-section">';
+                echo '<div class="result-left-sec"><h3>' . esc_html(stripslashes($title)) . '</h3></div>';
+                echo '<div class="result-right-sec"><ul>';
+
+                foreach ($areas as $area) {
+                    echo '<li>';
+                    echo '<a target="_blank" href="' . $site_url.'/coverage/?lat=' . urlencode($area['Latitude']) . '&lon=' . urlencode($area['Longitude']) . '" class="coverage-link">
+                    <span class="icon-left">
+                        <img src="/wp-content/uploads/2024/11/location-icon-b.svg" alt="...">
+                    </span>' . htmlspecialchars($area['Upcoming Coverage Expansion Area']) . '
+                  </a>';
+                    echo '<label>' . esc_html(stripslashes($area['Target Completion Month'])) . '</label>';
+                    echo '</li>';
+                }
+
+                echo '</ul></div></div>';
+            }
+            echo ob_get_clean();
+        } else {
+            echo "<p>No data available for the selected state.</p>";
+        }
+    }
+    wp_die();
+}
+add_action('wp_ajax_load_coverage_data', 'load_coverage_data');
+add_action('wp_ajax_nopriv_load_coverage_data', 'load_coverage_data');
+}
+
+
+
+
+if (!function_exists('coverage_iframe_shortcode')) {
+    function coverage_iframe_shortcode($atts) {
+        $defaults = array(
+            'width'  => '100%',
+            'height' => '600px',
+        );
+        $iframe_url = match (defined('SITE_ENV') ? SITE_ENV : '') {
+            'LOCAL' => 'https://coverage-iot.yes.my',
+            'IOT'   => 'https://coverage-iot.yes.my',
+            default => 'https://coverage.yes.my',
+        };
+
+        $atts = shortcode_atts($defaults, $atts, 'coverage_iframe');
+        $query_params = array_filter([
+            'lat' => $_GET['lat'] ?? null,
+            'lon' => $_GET['lon'] ?? null,
+        ]);
+
+        $iframe_src = $iframe_url . (!empty($query_params) ? '?' . http_build_query($query_params) : '');
+        return '<iframe id="coverageIframe" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+            scrolling="no" frameborder="0"
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
+            width="' . esc_attr($atts['width']) . '" height="' . esc_attr($atts['height']) . '"
+            src="' . esc_url($iframe_src) . '">
+        </iframe>';
+    }
+    add_shortcode('coverage_iframe', 'coverage_iframe_shortcode');
 }
