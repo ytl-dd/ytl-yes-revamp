@@ -1,0 +1,1360 @@
+<style type="text/css">
+    .hero-slider-section {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: #d1d5de
+    }
+
+    #hero-slider .carousel-item .container {
+        height: 100%;
+    }
+
+    #hero-slider .carousel-item img {
+        width: 100%;
+        height: 405px;
+        /*405*/
+        min-height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+        margin-top: 0;
+    }
+
+    #hero-slider .carousel-item article {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec {
+        margin: 0;
+        padding: 0px 0 0 0%;
+        /* position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 99; */
+        width: 53%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .title-sec {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+        width: auto !important;
+        height: 60px !important;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .title-sec img {
+        width: 280px;
+        height: auto !important;
+        margin: 0 0 20px;
+        display: block;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 46px;
+        line-height: 54px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        margin-bottom: 15px;
+        font-display: swap;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        font-display: swap;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .btn-sec {
+        margin: 20px 0 0;
+        padding: 0;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .btn-sec img {
+        width: auto;
+        height: 60px;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing {
+        width: 190px;
+        display: flex;
+        margin-top: 15px;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing h4 {
+        color: #FFF;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 44px;
+        padding-top: 0px;
+        letter-spacing: -0.02em;
+        position: relative;
+        margin-left: 48px;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing h4 span {
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 13px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing h4 span b {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing h4 sup {
+        font-size: 24px;
+        line-height: 24px;
+        display: flex;
+        height: 40px;
+        position: absolute;
+        left: -45px;
+        top: 0px;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing p {
+        color: #FFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-transform: none;
+        margin: -15px 0;
+        padding: 0;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing .month-sec {
+        color: #FFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0;
+        text-transform: none;
+        text-align: right;
+        padding: 0;
+        margin: 0;
+    }
+
+    #hero-slider .carousel-indicators [data-bs-target] {
+        height: 10px !important;
+        width: 10px !important;
+        border-radius: 100%;
+        border-top: 0;
+        border-bottom: 0;
+        background-color: #fff;
+        margin-right: 5px;
+        margin-left: 5px;
+        opacity: .7;
+    }
+
+    #hero-slider .carousel-indicators .active {
+        background: #ff0084;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        height: 10px !important;
+        width: 10px !important;
+        border-radius: 100%;
+        border-top: 0;
+        border-bottom: 0;
+        background-color: #cbcbcb;
+    }
+
+    .carousel-indicators .active {
+        background: #ff0084;
+    }
+
+    .info-section {
+        padding: 70px 0px 70px;
+        width: 100%;
+        background-color: #F5F6FA;
+    }
+
+    .info-section h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 39px;
+        line-height: 47px;
+        letter-spacing: -2%;
+        text-align: center;
+    }
+
+    .info-section p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -2%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #start-earning {
+        padding: 0px 0px 50px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .section-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 39px;
+        line-height: 47px;
+        letter-spacing: -2%;
+        text-align: center;
+    }
+
+    #start-earning .btn-secondary {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        background: #2F3BF5;
+        width: 232px;
+        height: 52px;
+        line-height: 42px;
+        margin: auto;
+        display: block;
+        border-radius: 50px;
+        border: 0;
+    }
+
+    #start-earning .card {
+        background: transparent;
+        border: none;
+    }
+
+    #start-earning .card .number {
+        background: #1A1E47;
+        color: #fff;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        font-weight: 700;
+    }
+
+    #start-earning .card img {
+        margin: auto;
+        display: block;
+    }
+
+    #start-earning .card p {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+    #uncapped-5g {
+        padding: 0px 0px 50px;
+        width: 100%;
+        background-color: #F4F2F3;
+    }
+
+    #uncapped-5g .card {
+        background: transparent;
+        border: none;
+    }
+
+    #uncapped-5g .card-body h5 {
+        font-family: Montserrat;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #uncapped-5g .card-body p {
+        font-family: Open Sans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    #uncapped-5g .card {
+        padding: 0 20px 40px;
+    }
+
+    .timeline {
+        margin: auto;
+        max-width: 800px;
+    }
+
+    .timeline-description::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #ff0080;
+    }
+
+    .timeline-item {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+
+    .timeline-dot {
+        position: absolute;
+        left: -4px;
+        top: 0px;
+        width: 10px;
+        height: 10px;
+        background-color: #ff0080;
+        border-radius: 50%;
+    }
+
+    .timeline-dot-b {
+        top: unset;
+        bottom: 0;
+    }
+
+    .timeline-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .timeline-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        letter-spacing: 10%;
+        text-align: center;
+        min-width: 150px;
+
+    }
+
+    .timeline-description {
+        color: #555;
+        position: relative;
+    }
+
+    .timeline-description p {
+        padding-left: 20px;
+        padding-bottom: 40px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        color: #525252;
+    }
+
+    .bottom-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 10%;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #2F3BF5;
+    }
+
+    .bottom-text a {
+        color: #2F3BF5 !important;
+    }
+
+    #reward {
+        padding: 0px 0px 50px;
+        width: 100%;
+        background: #F5F6FA;
+    }
+
+    #reward .nav {
+        justify-content: center;
+        border-bottom: none;
+    }
+
+    #reward .nav-link {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: center;
+        border: none !important;
+        padding: 10px 50px;
+        border-bottom: 1px solid #888 !important;
+        color: #888888;
+        text-transform: uppercase;
+    }
+
+    #reward .nav-link br {
+        display: none;
+    }
+
+    #reward .nav-tabs .nav-item.show .nav-link,
+    #reward .nav-tabs .nav-link.active {
+        color: #2F3BF5;
+        background: unset;
+    }
+
+    #reward .nav-link.active {
+        border-color: #2F3BF5 !important;
+        border-width: 2px !important;
+    }
+
+    #reward .nav-link:focus,
+    .nav-link:hover {
+        color: inherit;
+    }
+
+    #start-earning .single-img {
+        margin: auto;
+        display: block;
+        border-radius: 15px;
+    }
+
+    #reward .paragrap {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #525252;
+        padding: 0 25%;
+    }
+
+    #databck-rewards {
+        background: #F5F6FA;
+        padding: 70px 0px;
+    }
+
+    #databck-rewards h2 {
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-size: 39px;
+        line-height: 47px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* #databck-rewards p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+    } */
+
+    .data_rwd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data_rwd .data_rwd_content {
+        text-align: center;
+    }
+
+    .data_rwd .data_rwd_content h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #000000;
+        padding: 0px 15px;
+        margin-bottom: 15px;
+    }
+
+    .data_rwd .data_rwd_content p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #2B2B2B;
+        padding: 0px 15px;
+    }
+
+    .data_rwd .data_rwd_content .purple-btn {
+        padding: 10px 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        background-color: #2F3BF5;
+        color: #FFFFFF;
+        border-radius: 50px;
+        margin-top: 15px;
+    }
+
+    /* #databck-rewards .tmc {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #000;
+    } */
+
+
+    #faq-section {
+        align-items: center;
+        justify-content: center;
+        padding: 70px 0px 70px;
+        background: #fff;
+    }
+
+    #faq-section h1 {
+        font-size: 39px;
+        font-weight: 800;
+        line-height: 47px;
+        color: #000;
+        text-align: center;
+    }
+
+    #faq-section .accordion-item {
+        margin-bottom: 15px !important;
+    }
+
+    #faq-section .accordion-button {
+        border: none;
+        box-shadow: unset;
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 1px solid #000;
+    }
+
+    #faq-section .accordion-button::after {
+        opacity: 1;
+    }
+
+    #faq-section .accordion-button::after {
+        background-image: none;
+        background: url(/wp-content/uploads/2023/09/icon-open.png) no-repeat center center / contain;
+    }
+
+    #faq-section .accordion-button:not(.collapsed)::after {
+        background-image: none;
+        background: url(/wp-content/uploads/2023/09/icon-hide.png) no-repeat center center / contain !important;
+    }
+
+    #faq-section .accordion-button:focus {
+        box-shadow: unset;
+    }
+
+    #faq-section .accordion-body {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #faq-section .accordion-body h4 {
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 800;
+    }
+
+    #faq-section .accordion-body ul {
+        margin: 15px 0 0 15px;
+        padding: 0;
+        list-style-type: upper-roman;
+    }
+
+    #faq-section .accordion-body li {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #faq-section .accordion-body p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #faq-section .viewall-btn {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+
+    @media only screen and (min-device-width: 1600px) and (max-device-width: 2880px) {
+
+        #hero-slider .carousel-item img {
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+            margin-top: 0;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec {
+            margin: 0;
+            padding: 0px 0 0 0%;
+            /* position: absolute;
+            top: 15%;
+            left: 5%;
+            z-index: 99; */
+            width: 53%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec {
+            position: relative;
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+
+        .raya-banner {
+            margin-top: 30px;
+            font-size: 85px !important;
+            line-height: 76px !important;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+            width: auto !important;
+            height: 60px !important;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec img {
+            width: 280px;
+            height: auto !important;
+            margin: 0 0 20px;
+            display: block;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 56px;
+            line-height: 62px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 15px;
+            font-display: swap;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            font-display: swap;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec {
+            margin: 30px 0 0;
+            padding: 0;
+        }
+
+        .pink-btn {
+            font-size: 24px !important;
+        }
+
+        .blue-btn {
+            font-size: 24px !important;
+        }
+
+        #faq-section {
+            margin-top: 0px !important;
+        }
+    }
+
+    @media only screen and (max-device-width: 992px) {
+
+        #hero-slider .carousel-item img {
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+            margin-top: 0;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec {
+            margin: 35px auto;
+            padding: 0px 0 0 0%;
+            /* position: absolute;
+              top: 15%;
+              left: 5%;
+            z-index: 99; */
+            width: 95%;
+            height: auto;
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec {
+            position: relative;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .raya-banner {
+            margin-top: 30px;
+            font-size: 85px !important;
+            line-height: 76px !important;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+            width: auto !important;
+            height: 60px !important;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec img {
+            width: 280px;
+            height: auto !important;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 46px;
+            line-height: 54px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 15px;
+            font-display: swap;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            font-display: swap;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec {
+            margin: 30px 0 0;
+            padding: 0;
+        }
+
+        .carousel-indicators {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        #hero-slider .carousel-item .inner-content-sec {
+            margin: 35px auto;
+            padding: 0;
+            /* position: absolute;
+            top: 0%;
+            left: 2%; */
+            width: 95%;
+            display: block;
+            height: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+            margin-top: 70px;
+        }
+
+        #hero-slider .carousel-item img {
+            height: auto;
+            -o-object-fit: unset;
+            object-fit: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec {
+            position: relative;
+            display: block;
+            width: 95%
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+            width: auto !important;
+            height: 40px !important;
+            margin: 0 auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec img {
+            width: 300px;
+            margin: 0 auto 15px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 {
+            font-size: 48px;
+            line-height: 56px;
+            margin-top: 0px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p br {
+            display: unset;
+        }
+
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec {
+            margin: 20px auto;
+            padding: 0;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec .pink-btn,
+        #hero-slider .carousel-item .inner-content-sec .btn-sec .blue-btn {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec img {
+            width: auto !important;
+            height: 35px !important;
+            margin: 0px auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing {
+            width: auto;
+            display: flex;
+            margin-top: 15px;
+            margin: 0 auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing h4 {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 31px;
+            padding-top: 5px;
+            position: relative;
+            margin-left: 48px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing h4 sup {
+            font-size: 24px;
+            line-height: 24px;
+            height: 40px;
+            left: -45px;
+            top: 0px;
+        }
+
+        .carousel-indicators {
+            margin-bottom: 0.5rem;
+        }
+
+        .info-section {
+            padding: 50px 0px 50px;
+            width: 100%;
+            background-color: #F5F6FA;
+        }
+
+        .usp-section {
+            padding: 50px 0;
+        }
+
+        .usp-section .p-5 {
+            padding: 2rem 1rem 1rem !important;
+        }
+
+        .usp-section h2 img {
+            width: 55%;
+        }
+
+        .usp-section p {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 0 20px;
+        }
+
+        .usp-section p br {
+            display: none;
+        }
+
+        .usp-section .card {
+            flex-direction: unset;
+            display: block;
+            text-align: center;
+        }
+
+        .usp-section .card img {
+            max-width: 100px;
+            margin: 0 auto 15px auto;
+            text-align: center;
+        }
+
+        .usp-section .card .card-body h5 {
+            font-size: 20px;
+            line-height: 26px;
+            text-align: left;
+        }
+
+        .usp-section .card .card-body h5 br {
+            display: none;
+        }
+
+        .usp-section .card .card-body p {
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            padding: 0;
+        }
+
+        #reward .paragrap {
+            padding: 0 15%;
+        }
+
+        .timeline-title {
+            min-width: 150px;
+        }
+
+        #databck-rewards {
+            padding: 50px 0px 0;
+        }
+
+        #databck-rewards h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        #databck-rewards p {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 20px;
+        }
+
+        .data_rwd {
+            width: 85%;
+        }
+
+        .data_rwd img {
+            width: 100%;
+        }
+
+        .getway {
+            scroll-snap-type: x mandatory;
+            overflow-y: auto;
+            padding: 0px 0 0px;
+        }
+
+
+        #faq-section {
+            padding: 30px 0px !important;
+            margin-top: 0px !important;
+        }
+
+        #faq-section h2 {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        #faq-section .accordion-button {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+
+        #faq-section .accordion-body h4 {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 800;
+        }
+
+        #faq-section .accordion-body ul {
+            margin: 15px 0 0 15px;
+            padding: 0;
+        }
+
+        #faq-section .accordion-body li {
+            margin: 0;
+            padding: 0 0 5px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        #faq-section .accordion-body p {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        #faq-section .viewall-btn {
+            font-size: 16px;
+        }
+
+    }
+
+    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+
+        #hero-slider .carousel-item .inner-content-sec {
+            margin: 20px auto;
+            padding: 0;
+            /* position: absolute;
+        top: 0%;
+        left: 2%; */
+            width: 95%;
+            display: block;
+            height: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+            margin-top: 70px;
+        }
+
+        #hero-slider .carousel-item img {
+            height: auto;
+            -o-object-fit: unset;
+            object-fit: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec {
+            position: relative;
+            display: block;
+            width: 95%
+        }
+
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+            width: auto !important;
+            height: 35px !important;
+            margin: 0 auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec img {
+            width: 250px;
+            margin: 0 auto 15px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-top: 0px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p br {
+            display: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 br {
+            display: none;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec {
+            margin: 10px auto;
+            padding: 0;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec .pink-btn,
+        #hero-slider .carousel-item .inner-content-sec .btn-sec .blue-btn {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec img {
+            width: auto !important;
+            height: 35px !important;
+            margin: 0px auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing {
+            width: auto;
+            display: flex;
+            margin-top: 15px;
+            margin: 0 auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing h4 {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 31px;
+            padding-top: 5px;
+            position: relative;
+            margin-left: 48px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing h4 sup {
+            font-size: 24px;
+            line-height: 24px;
+            height: 40px;
+            left: -45px;
+            top: 0px;
+        }
+
+        .info-section h2 {
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        .info-section p {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .prize-section h2 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        .prize-section .prize-inner-sec-left h3 {
+            font-style: italic;
+            font-size: 22px;
+            line-height: 13px;
+        }
+
+        .prize-section .prize-inner-sec-right img {
+            margin: 0px auto 0;
+        }
+
+        .usp-section {
+            padding: 50px 0;
+        }
+
+        .usp-section .p-5 {
+            padding: 2rem 1rem 1rem !important;
+        }
+
+        .usp-section h2 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        .usp-section h2 img {
+            width: 55%;
+        }
+
+        .usp-section p {
+            font-size: 20px;
+            line-height: 24px;
+            padding: 0 20px;
+        }
+
+        .usp-section p br {
+            display: none;
+        }
+
+        .usp-section .card {
+            flex-direction: unset;
+            display: block;
+            text-align: center;
+        }
+
+        .usp-section .card img {
+            max-width: 100px;
+            margin: 0 auto 15px auto;
+            text-align: center;
+        }
+
+        .usp-section .card .card-body {
+            padding: 0rem 0 0 1rem;
+        }
+
+        .usp-section .card .card-body h5 {
+            font-size: 20px;
+            line-height: 26px;
+            text-align: left;
+            margin-bottom: 5px !important;
+        }
+
+        .usp-section .card .card-body h5 br {
+            display: none;
+        }
+
+        .usp-section .card .card-body h5 span {
+            background: #1A1E47;
+            min-width: 36px;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            font-size: 20px;
+        }
+
+        .usp-section .card .card-body p {
+            font-size: 14px;
+            line-height: 16px;
+            text-align: left;
+            padding: 0;
+            margin-left: 45px;
+        }
+
+        #start-earning .single-img {
+            width: 100%;
+        }
+
+        .section-title {
+            font-family: Montserrat;
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 32px;
+            letter-spacing: 0%;
+            text-align: center;
+
+        }
+
+        #reward .paragrap {
+            padding: 0 5%;
+        }
+
+        #reward .nav {
+            flex-wrap: nowrap;
+        }
+
+        #reward .nav-link {
+            padding: 10px 15px;
+        }
+
+        #reward .nav-link br {
+            display: block;
+        }
+
+        #databck-rewards {
+            padding: 50px 0px 0;
+        }
+
+        #databck-rewards h2 {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        #databck-rewards p {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 20px;
+        }
+
+        .data_rwd {
+            width: 85%;
+        }
+
+        .data_rwd img {
+            width: 100%;
+        }
+
+        .timeline-title {
+            min-width: 100px;
+        }
+
+
+
+
+        #faq-section {
+            padding: 50px 0px !important;
+        }
+
+        #faq-section h1 {
+            font-size: 26px;
+            line-height: 34px;
+            font-weight: 700;
+        }
+
+        #faq-section .accordion-item {
+            margin-bottom: 15px;
+        }
+
+        #faq-section .accordion-button {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+
+        #faq-section .accordion-body h4 {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 800;
+        }
+
+        #faq-section .accordion-body ul {
+            margin: 15px 0 0 15px;
+            padding: 0;
+        }
+
+        #faq-section .accordion-body li {
+            margin: 0;
+            padding: 0 0 5px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        #faq-section .accordion-body p {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        #faq-section .viewall-btn {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+    }
+</style>

@@ -1,0 +1,11 @@
+<script type="text/javascript">
+    /**
+     * Function to check if page is loaded from back button
+    */
+    function pageShown(evt) {
+        if (evt.persisted) {
+            toggleOverlay(false);
+        }
+    }
+    window.addEventListener("pageshow", pageShown, false);
+</script>

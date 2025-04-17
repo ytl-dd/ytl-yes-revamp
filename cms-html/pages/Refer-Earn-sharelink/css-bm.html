@@ -1,0 +1,1985 @@
+<style type="text/css">
+    .hero-slider-section {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        background: #d1d5de
+    }
+
+    #hero-slider .carousel-item .container {
+        height: 100%;
+    }
+
+    #hero-slider .carousel-item img {
+        width: 100%;
+        height: 405px;
+        /*405*/
+        min-height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+        margin-top: 0;
+    }
+
+    #hero-slider .carousel-item article {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec {
+        margin: 0;
+        padding: 0px 0 0 0%;
+        /* position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 99; */
+        width: 53%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .title-sec {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+        width: auto !important;
+        height: 60px !important;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .title-sec img {
+        width: 280px;
+        height: auto !important;
+        margin: 0 0 20px;
+        display: block;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 46px;
+        line-height: 54px;
+        font-weight: 800;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        margin-bottom: 15px;
+        font-display: swap;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #ffffff;
+        letter-spacing: -0.02em;
+        font-display: swap;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .btn-sec {
+        margin: 20px 0 0;
+        padding: 0;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .btn-sec img {
+        width: auto;
+        height: 60px;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing {
+        width: 190px;
+        display: flex;
+        margin-top: 15px;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing h4 {
+        color: #FFF;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 44px;
+        padding-top: 0px;
+        letter-spacing: -0.02em;
+        position: relative;
+        margin-left: 48px;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing h4 span {
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 13px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing h4 span b {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing h4 sup {
+        font-size: 24px;
+        line-height: 24px;
+        display: flex;
+        height: 40px;
+        position: absolute;
+        left: -45px;
+        top: 0px;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing p {
+        color: #FFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-transform: none;
+        margin: -15px 0;
+        padding: 0;
+    }
+
+    #hero-slider .carousel-item .inner-content-sec .pricing .month-sec {
+        color: #FFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0;
+        text-transform: none;
+        text-align: right;
+        padding: 0;
+        margin: 0;
+    }
+
+    #hero-slider .carousel-indicators [data-bs-target] {
+        height: 10px !important;
+        width: 10px !important;
+        border-radius: 100%;
+        border-top: 0;
+        border-bottom: 0;
+        background-color: #fff;
+        margin-right: 5px;
+        margin-left: 5px;
+        opacity: .7;
+    }
+
+    #hero-slider .carousel-indicators .active {
+        background: #ff0084;
+    }
+
+    .usp-section {
+        background-color: #fff;
+        padding: 70px 0px 0;
+        margin: 0;
+        position: relative;
+        background-image: url('/wp-content/uploads/2024/07/usp-sec-bg.webp');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .usp-section h2 img {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .usp-section h2 {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 39px;
+        line-height: 47px;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #000000;
+    }
+
+    .usp-section p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .usp-section a {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        text-align: center;
+        color: #2F3BF5;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .usp-section .card {
+        border: none;
+        background-color: unset;
+    }
+
+    .usp-section .card img {
+        max-width: 100px;
+        margin: auto;
+    }
+
+    .usp-section .card .card-body {
+        text-align: center;
+    }
+
+    .usp-section .card .card-body h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    .usp-section .card .card-body p {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #000;
+    }
+
+    /*plan section*/
+    #post-plan-card {
+        margin: 20px 30px 50px;
+    }
+
+    .layer-sectionGradient {
+        background-color: #F7F8F9;
+    }
+
+    .layer-plans {
+        padding: 60px 0;
+        overflow: hidden;
+    }
+
+    .layer-plans .row-sectionHeader h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 39px;
+        font-weight: 500;
+        line-height: 47px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #1A1E47;
+    }
+
+
+    .layer-plans .layer-planBox h5 {
+        background: linear-gradient(80.9deg, #FF0084 16.48%, #FF0084 85.6%, #FF0084 96.9%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 23px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        margin-top: 5px;
+    }
+
+    .layer-plans .layer-planBox h2 {
+        font-family: 'Montserrat', sans-serif;
+        color: #000;
+        font-size: 39px;
+        font-weight: 800;
+        line-height: 56px;
+        margin: 5px 0 5px;
+        letter-spacing: -0.02em;
+    }
+
+    .layer-plans .layer-planBox h2 b {
+        font-size: 24px;
+    }
+
+    .layer-plans .layer-planBox h2 span {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 40px;
+        padding-left: 2px;
+        letter-spacing: -0.02em;
+    }
+
+    .layer-plans .layer-planBox h6 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -2%;
+        margin: 0;
+    }
+
+    .layer-plans .layer-planBox .plan-card-list {
+        border-top: 1px solid #E4E4E4;
+        padding: 5px 0 0;
+        margin: 15px 0 0;
+    }
+
+    .layer-plans .layer-planBox .plan-card-list p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        color: #1A1E47;
+        margin: 10px 0 10px;
+        text-align: left;
+        padding: 0;
+    }
+
+    .layer-planBox ul li span {
+        color: #ff0084;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+
+
+    /* .latest-plan-carousel .slick-list {
+        overflow: visible;
+      } */
+
+    .latest-plan-carousel .slick-track {
+        display: flex !important;
+    }
+
+    .latest-plan-carousel .slick-disabled {
+        opacity: 0.3 !important;
+    }
+
+    .latest-plan-carousel .slick-slide {
+        height: auto !important;
+    }
+
+    .latest-plan-carousel .slick-slide {
+        margin: 15px 15px;
+    }
+
+    .latest-plan-carousel .slick-dots {
+        left: 0;
+    }
+
+
+    /* ------------------------------ */
+    .layer-plans .nav-tabs {
+        /* border-bottom: none; */
+    }
+
+    .layer-plans .nav-tabs .nav-link {
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #2F3BF5;
+        background-color: unset;
+        /* border: 2px solid #ff0084; */
+        /* border-top-left-radius: 0; */
+        padding: 0.5rem 1.5rem;
+        border-radius: 100px;
+    }
+
+    .layer-plans .nav {
+        justify-content: space-between;
+        margin: 35px auto 15px;
+        border: 2px solid #2F3BF5;
+        width: auto;
+        border-radius: 100px;
+        align-items: center;
+        padding: 5px 5px 6px;
+    }
+
+    .layer-plans .nav-tabs .nav-link.active {
+        color: #fff;
+        background-color: #2F3BF5;
+        /*border: 2px solid #ff0084; */
+    }
+
+    .layer-plans .nav-tabs .nav-item.show .nav-link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FF0084;
+    }
+
+    .layer-plans .nav-tabs .left-tab {
+        /* border-top-left-radius: 1.25rem;
+        border-bottom-left-radius: 1.25rem;
+        border-top-right-radius: 0; */
+    }
+
+    .layer-plans .nav-tabs .right-tab {
+        /* border: 2px solid #ff0084;
+        border-top-right-radius: 1.25rem;
+        border-bottom-right-radius: 1.25rem; */
+    }
+
+    .layer-plans .nav .nav-item {
+        margin: 0 0px
+    }
+
+    .layer-plans #myTabContent {
+        padding: 0px 0 0
+    }
+
+    /*sub tab*/
+    .sub-tab-sec .nav-tabs {
+        /* border-bottom: none; */
+    }
+
+    .sub-tab-sec .nav {
+        justify-content: space-between;
+        margin: 10px auto 15px;
+        border: 0px solid #2F3BF5;
+        width: auto;
+        border-radius: 100px;
+        align-items: center;
+        padding: 5px 5px 6px;
+    }
+
+    .sub-tab-sec .nav-tabs .nav-link {
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0;
+        text-transform: none;
+        color: #2B2B2B;
+        background-color: unset;
+        /* border: 2px solid #ff0084; */
+        /* border-top-left-radius: 0; */
+        padding: 0.5rem 1.5rem;
+        border-radius: 100px;
+    }
+
+    .sub-tab-sec .nav-tabs .nav-link.active {
+        font-weight: 700;
+        color: #2F3BF5;
+        background-color: unset;
+        border-bottom: 3px solid #2F3BF5;
+        border-radius: 0;
+    }
+
+    .sub-tab-sec .nav-tabs .nav-item.show .nav-link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #2F3BF5;
+    }
+
+    .sub-tab-sec .nav .nav-item {
+        margin: 0 0px
+    }
+
+    .sub-tab-sec #myTabContent {
+        padding: 0px 0 0
+    }
+
+    .layer-plans .tab-content .tab-pane p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 27px;
+        letter-spacing: -2%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* end sub tab*/
+
+    .layer-plans .content-part {
+        background: #fff;
+        box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 0 20px 0;
+        padding: 20px 30px;
+    }
+
+    .layer-plans .content-part .content-part-left {
+        margin: 0;
+        padding: 0 50px 0 0;
+        width: 90%;
+    }
+
+    .layer-plans .content-part .content-part-right {
+        margin: 0;
+        padding: 0px;
+        width: 10%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* ----------------------- */
+
+    .tnc-text {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+    }
+
+    .blue-btn {
+        background-color: #2F3BF5;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 0.7rem 1.8rem;
+        width: 100%;
+    }
+
+    .layer-plans .row-sectionHeader h2,
+    .layer-plans .row-sectionHeader p {
+        color: #1a1e47;
+    }
+
+    .layer-plans .row-sectionHeader p {
+        color: #000;
+        font-size: 20px;
+    }
+
+    .card_body_yes {
+        background: linear-gradient(90deg,
+                #c91fc7 6.67%,
+                #b21ab1 27.76%,
+                #a619a7 66.79%,
+                #8a21a3 119.46%,
+                #432fc3 183.12%,
+                #2d369d 206.87%) !important;
+        position: relative;
+    }
+
+    .layer-planBox ul {
+        margin: 0;
+        padding: 0 0 0 0px;
+    }
+
+    .layer-planBox ul li {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+
+    .layer-planBox ul li:before {
+        content: url('https://cdn.yes.my/site/wp-content/uploads/2023/06/list-check.png');
+    }
+
+    .card_body_yes:before {
+        position: absolute;
+        right: -22px;
+        top: -65px;
+        content: "50% OFF Yes Wireless Fibre";
+        background: #ff0084;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px;
+        z-index: 1;
+        line-height: 1.2;
+        box-shadow: 0px 0px 19px 4px #80808040;
+        text-align: center;
+    }
+
+    .list_data_yes_my {
+        list-style-type: upper-roman;
+    }
+
+    .card_footer_yes {
+        background: #9d1498 !important;
+    }
+
+    .list_data_yes_my {
+        padding-left: 37px !important;
+    }
+
+    .layer-planBox {
+        background: #fff;
+        border: 0;
+        color: #fff;
+        /* box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.15); */
+        border-radius: 10px !important;
+    }
+
+    .layer-planBox .card-body {
+        color: #2b2b2b;
+        padding: 30px 25px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .layer-planBox .card-body p {
+        font-size: 15px;
+    }
+
+    .layer-planBox h3 {
+        background: #FF0084;
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 800;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px 30px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-transform: none;
+        color: #fff;
+        width: 85%;
+    }
+
+    .layer-planBox p {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .layer-planBox hr {
+        background-color: #fff;
+        opacity: 0.7;
+    }
+
+
+    .layer-planBox .span-slash {
+        text-decoration: line-through;
+    }
+
+    .layer-planBox .card-footer {
+        background: transparent;
+        border-top: none;
+        border-radius: 0 0 20px 20px;
+        font-family: "Montserrat", sans-serif;
+        padding: 10px 40px 30px;
+    }
+
+    .layer-planBox .card-footer p {
+        font-size: 33px;
+    }
+
+    .layer-planBox .panel-price {
+        font-weight: 800;
+        color: #1a1e47;
+    }
+
+    .layer-planBox .panel-price .span-large {
+        font-size: 30px;
+    }
+
+    .layer-planBox .panel-tnc {
+        font-size: 14px !important;
+        color: #2b2b2b;
+    }
+
+    .layer-plans p.panel-btnBuy {
+        text-align: center;
+    }
+
+    .post-card-list p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1A1E47;
+        margin: 0 0 8px;
+    }
+
+    .plan-v-more a {
+        margin-left: 25px;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 600;
+        color: #2F3BF5;
+        text-decoration: underline;
+    }
+
+    .plan-v-more {
+        margin-top: -8px !important;
+    }
+
+    .plan-v-more a img {
+        width: 8px;
+    }
+
+    #post-plan-card .carousel-buttons .carousel-control-next {
+        right: -35px !important;
+    }
+
+    #post-plan-card .carousel-buttons .carousel-control-next span {
+        background-image: none !important;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid #1A1E47;
+        border-left: 2px solid #1A1E47;
+        transform: rotate(135deg);
+    }
+
+    #post-plan-card .carousel-buttons .carousel-control-prev {
+        left: -35px !important;
+    }
+
+    #post-plan-card .carousel-buttons .carousel-control-prev span {
+        background-image: none !important;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid #1A1E47;
+        border-left: 2px solid #1A1E47;
+        transform: rotate(-45deg);
+    }
+
+    #infinite-plan-card,
+    #infinite12m-plan-card,
+    #infinite-plus-plan-card,
+    #broadband-plan-card,
+    #broadband-no-contract-plan-card {
+        margin: 20px 30px 50px;
+    }
+
+    #infinite-plan-card .carousel-buttons .carousel-control-prev,
+    #infinite12m-plan-card .carousel-buttons .carousel-control-prev,
+    #infinite-plus-plan-card .carousel-buttons .carousel-control-prev,
+    #broadband-plan-card .carousel-buttons .carousel-control-prev {
+        left: -25px !important;
+    }
+
+    #infinite-plan-card .carousel-buttons .carousel-control-next,
+    #infinite12m-plan-card .carousel-buttons .carousel-control-next,
+    #infinite-plus-plan-card .carousel-buttons .carousel-control-next,
+    #broadband-plan-card .carousel-buttons .carousel-control-next {
+        right: -25px !important;
+    }
+
+    #infinite-plan-card .carousel-buttons .carousel-control-next span,
+    #infinite12m-plan-card .carousel-buttons .carousel-control-next span,
+    #infinite-plus-plan-card .carousel-buttons .carousel-control-next span,
+    #broadband-plan-card .carousel-buttons .carousel-control-next span {
+        background-image: none !important;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid #1A1E47;
+        border-left: 2px solid #1A1E47;
+        transform: rotate(135deg);
+    }
+
+    #infinite-plan-card .carousel-buttons .carousel-control-prev span,
+    #infinite12m-plan-card .carousel-buttons .carousel-control-prev span,
+    #infinite-plus-plan-card .carousel-buttons .carousel-control-prev span,
+    #broadband-plan-card .carousel-buttons .carousel-control-prev span {
+        background-image: none !important;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid #1A1E47;
+        border-left: 2px solid #1A1E47;
+        transform: rotate(-45deg);
+    }
+
+    .arrow-sec {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .morelocation {
+        display: none;
+    }
+
+    .moreless-button {
+        text-align: center;
+        margin-left: auto;
+    }
+
+    .arrow-up {
+        display: none;
+    }
+
+    /* end plan section */
+
+    @media(min-width:992px) {
+
+        #post-plan-card .carousel-buttons,
+        #broadband-no-contract-plan-card .carousel-buttons,
+        #broadband-plan-card .carousel-buttons,
+        #infinite-plan-card .carousel-buttons,
+        #infinite12m-plan-card .carousel-buttons,
+        #infinite-plus-plan-card .carousel-buttons {
+            display: none;
+        }
+
+        #post-plan-card .carousel-indicators,
+        #broadband-no-contract-plan-card .carousel-indicators,
+        #broadband-plan-card .carousel-indicators,
+        #infinite-plan-card .carousel-indicators,
+        #infinite12m-plan-card .carousel-indicators,
+        #infinite-plus-plan-card .carousel-indicators {
+            display: none;
+        }
+
+        #post-plan-card .carousel-inner .carousel-item,
+        #broadband-no-contract-plan-card .carousel-inner .carousel-item,
+        #broadband-plan-card .carousel-inner .carousel-item,
+        #infinite-plan-card .carousel-inner .carousel-item,
+        #infinite12m-plan-card .carousel-inner .carousel-item,
+        #infinite-plus-plan-card .carousel-inner .carousel-item {
+            width: 18%;
+            display: block !important;
+            margin: 0 10px;
+        }
+
+        #post-plan-card .carousel-inner,
+        #broadband-no-contract-plan-card .carousel-inner,
+        #broadband-plan-card .carousel-inner,
+        #infinite-plan-card .carousel-inner,
+        #infinite12m-plan-card .carousel-inner,
+        #infinite-plus-plan-card .carousel-inner {
+            display: flex !important;
+            justify-content: center;
+        }
+
+        #post-plan-card,
+        #broadband-no-contract-plan-card,
+        #broadband-plan-card,
+        #infinite-plan-card,
+        #infinite-plan-card,
+        #infinite12m-plan-card,
+        #infinite-plus-plan-card {
+            margin: 20px 0px 40px;
+        }
+    }
+
+
+
+    #databck-rewards {
+        background: #fff;
+        padding: 70px 0px;
+    }
+
+    #databck-rewards h2 {
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-size: 39px;
+        line-height: 47px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #databck-rewards p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+    }
+
+    .data_rwd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data_rwd h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #000000;
+        padding: 0px 15px;
+    }
+
+    .data_rwd .pink-btn {
+        padding: 10px 35px;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-top: 15px;
+    }
+
+    #databck-rewards .tmc {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: #000;
+    }
+
+    #easy-steps {
+        align-items: center;
+        justify-content: center;
+        padding: 70px 0px 30px;
+        background-color: #F7F8F9;
+    }
+
+    #easy-steps h2 {
+        font-size: 39px;
+        font-weight: 800;
+        line-height: 46px;
+        color: #2B2B2B;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+
+    #easy-steps .inner-sec {
+        box-shadow: 0 7px 25px 6px rgba(0, 0, 0, .1);
+        -webkit-box-shadow: 0 7px 25px 6px rgba(0, 0, 0, .1);
+        padding: 30px 20px;
+        border-radius: 15px;
+    }
+
+    #easy-steps .content {
+        width: 90%;
+        margin: 0 auto;
+        height: 140px;
+    }
+
+    #easy-steps h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 27px;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: -2%;
+        color: #000;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    #easy-steps h3 span {
+        background: #1A1E47;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border-radius: 100px;
+        color: #fff;
+        margin-right: 10px;
+    }
+
+    #easy-steps p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 27px;
+        letter-spacing: -2%;
+        text-align: left;
+        color: #000;
+    }
+
+    #easy-steps .step-mob-visual {
+        padding: 0px 0px;
+        width: 80%;
+    }
+
+    #easy-steps .step-box {
+        width: 100%;
+        display: inline-block;
+    }
+
+    #easy-steps .viewall-btn {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ED028C;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+
+    #easy-steps .viewall-btn svg {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+
+    #easy-steps .viewall-btn:hover {
+        text-decoration: underline;
+    }
+
+    .getway {
+        scroll-snap-type: unset;
+        overflow-y: unset;
+        padding: 0px 0 0;
+    }
+
+
+    #faq-section {
+        align-items: center;
+        justify-content: center;
+        padding: 70px 0px 70px;
+        background: #fff;
+    }
+
+    #faq-section h1 {
+        font-size: 39px;
+        font-weight: 800;
+        line-height: 47px;
+        color: #000;
+        text-align: center;
+    }
+
+    #faq-section .accordion-item {
+        margin-bottom: 15px !important;
+    }
+
+    #faq-section .accordion-button {
+        border: none;
+        box-shadow: unset;
+        border-radius: 0;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 1px solid #000;
+    }
+
+    #faq-section .accordion-button::after {
+        opacity: 1;
+    }
+
+    #faq-section .accordion-button::after {
+        background-image: none;
+        background: url(/wp-content/uploads/2023/09/icon-open.png) no-repeat center center / contain;
+    }
+
+    #faq-section .accordion-button:not(.collapsed)::after {
+        background-image: none;
+        background: url(/wp-content/uploads/2023/09/icon-hide.png) no-repeat center center / contain !important;
+    }
+
+    #faq-section .accordion-button:focus {
+        box-shadow: unset;
+    }
+
+    #faq-section .accordion-body {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #faq-section .accordion-body h4 {
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 800;
+    }
+
+    #faq-section .accordion-body ul {
+        margin: 15px 0 0 15px;
+        padding: 0;
+        list-style-type: upper-roman;
+    }
+
+    #faq-section .accordion-body li {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #faq-section .accordion-body p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    #faq-section .viewall-btn {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+
+    @media only screen and (min-device-width: 1600px) and (max-device-width: 2880px) {
+
+        #hero-slider .carousel-item img {
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+            margin-top: 0;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec {
+            margin: 0;
+            padding: 0px 0 0 0%;
+            /* position: absolute;
+            top: 15%;
+            left: 5%;
+            z-index: 99; */
+            width: 53%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec {
+            position: relative;
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+
+        .raya-banner {
+            margin-top: 30px;
+            font-size: 85px !important;
+            line-height: 76px !important;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+            width: auto !important;
+            height: 60px !important;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec img {
+            width: 280px;
+            height: auto !important;
+            margin: 0 0 20px;
+            display: block;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 56px;
+            line-height: 62px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 15px;
+            font-display: swap;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            font-display: swap;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec {
+            margin: 30px 0 0;
+            padding: 0;
+        }
+
+        .pink-btn {
+            font-size: 16px !important;
+        }
+
+        .blue-btn {
+            font-size: 16px !important;
+        }
+
+        #faq-section {
+            margin-top: 0px !important;
+        }
+    }
+
+    @media only screen and (max-device-width: 992px) {
+
+        #hero-slider .carousel-item img {
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+            margin-top: 0;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec {
+            margin: 35px auto;
+            padding: 0px 0 0 0%;
+            /* position: absolute;
+              top: 15%;
+              left: 5%;
+            z-index: 99; */
+            width: 95%;
+            height: auto;
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec {
+            position: relative;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .raya-banner {
+            margin-top: 30px;
+            font-size: 85px !important;
+            line-height: 76px !important;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+            width: auto !important;
+            height: 60px !important;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec img {
+            width: 280px;
+            height: auto !important;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 46px;
+            line-height: 54px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 15px;
+            font-display: swap;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 36px;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            font-display: swap;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec {
+            margin: 30px 0 0;
+            padding: 0;
+        }
+
+        .carousel-indicators {
+            margin-bottom: 1rem;
+        }
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        #hero-slider .carousel-item .inner-content-sec {
+            margin: 35px auto;
+            padding: 0;
+            /* position: absolute;
+            top: 0%;
+            left: 2%; */
+            width: 95%;
+            display: block;
+            height: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+            margin-top: 70px;
+        }
+
+        #hero-slider .carousel-item img {
+            height: auto;
+            -o-object-fit: unset;
+            object-fit: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec {
+            position: relative;
+            display: block;
+            width: 95%
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+            width: auto !important;
+            height: 40px !important;
+            margin: 0 auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec img {
+            width: 300px;
+            margin: 0 auto 15px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 {
+            font-size: 48px;
+            line-height: 56px;
+            margin-top: 0px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p br {
+            display: unset;
+        }
+
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec {
+            margin: 20px auto;
+            padding: 0;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec .pink-btn,
+        #hero-slider .carousel-item .inner-content-sec .btn-sec .blue-btn {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec img {
+            width: auto !important;
+            height: 35px !important;
+            margin: 0px auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing {
+            width: auto;
+            display: flex;
+            margin-top: 15px;
+            margin: 0 auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing h4 {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 31px;
+            padding-top: 5px;
+            position: relative;
+            margin-left: 48px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing h4 sup {
+            font-size: 24px;
+            line-height: 24px;
+            height: 40px;
+            left: -45px;
+            top: 0px;
+        }
+
+        .carousel-indicators {
+            margin-bottom: 0.5rem;
+        }
+
+        .usp-section {
+            padding: 50px 0 30px;
+        }
+
+        .usp-section .p-5 {
+            padding: 2rem 1rem 1rem !important;
+        }
+
+        .usp-section h2 img {
+            width: 55%;
+        }
+
+        .usp-section p {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 20px;
+        }
+
+        .usp-section p br {
+            display: none;
+        }
+
+        .usp-section .card {
+            flex-direction: unset;
+            display: flex;
+        }
+
+        .usp-section .card img {
+            max-width: 70px;
+        }
+
+        .usp-section .card .card-body h5 {
+            font-size: 16px;
+            line-height: 21px;
+            text-align: left;
+        }
+
+        .usp-section .card .card-body h5 br {
+            display: none;
+        }
+
+        .usp-section .card .card-body p {
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            padding: 0;
+        }
+
+        #prepaid-plans {
+            padding: 50px 0
+        }
+
+        .plan-titile h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        .plan-titile p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        #prepaid-plans .plan-inner-sec {
+            scroll-snap-type: x mandatory;
+            overflow-y: auto;
+            padding: 0px 0 20px;
+        }
+
+        #prepaid-plans .btn-prepaid {
+            width: 85%;
+        }
+
+        .layer-plans .nav {
+            margin: 0px auto 15px;
+            padding: 5px 5px 6px;
+        }
+
+        .layer-plans .nav-tabs .nav-link {
+            font-size: 12px !important;
+            padding: 0.5rem 1rem !important;
+        }
+
+        .carousel-indicators {
+            margin-bottom: -30px !important;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            width: 8px !important;
+            height: 8px !important;
+            border-radius: 100px;
+            border: 0;
+            background-color: #d9d5d5;
+        }
+
+        .carousel-indicators button {
+            background-color: #aaa;
+        }
+
+        .carousel-indicators button {
+            background-color: #aaa;
+        }
+
+        .carousel-indicators button.active {
+            background-color: #FF0084 !important;
+        }
+
+        .tnc-text {
+            margin-top: 50px !important;
+        }
+
+        .layer-plans .tab-content .tab-pane p {
+            font-size: 18px;
+            line-height: 22px;
+            padding: 0 20px;
+        }
+
+        #databck-rewards {
+            padding: 50px 0px;
+        }
+
+        #databck-rewards h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        #databck-rewards p {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 20px;
+        }
+
+        .data_rwd img {
+            width: 90%;
+        }
+
+        #easy-steps {
+            padding: 50px 0px 0;
+        }
+
+        #easy-steps .inner-sec {
+            margin: 20px 0;
+        }
+
+        #easy-steps .content {
+            width: 90%;
+            margin: 0 auto;
+            height: 140px;
+        }
+
+        #easy-steps h2 {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 25px;
+        }
+
+        #easy-steps .step-mob-visual {
+            padding: 0px 30px;
+            width: 85%;
+        }
+
+        #easy-steps h3 {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        #easy-steps h3 span {
+            background: #1A1E47;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+        }
+
+        #easy-steps p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .getway {
+            scroll-snap-type: x mandatory;
+            overflow-y: auto;
+            padding: 0px 0 15px;
+        }
+
+        .getway .col-md-4.col-lg-4 {
+            width: 85%;
+        }
+
+
+        #faq-section {
+            padding: 30px 0px !important;
+            margin-top: 0px !important;
+        }
+
+        #faq-section h2 {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        #faq-section .accordion-button {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+
+        #faq-section .accordion-body h4 {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 800;
+        }
+
+        #faq-section .accordion-body ul {
+            margin: 15px 0 0 15px;
+            padding: 0;
+        }
+
+        #faq-section .accordion-body li {
+            margin: 0;
+            padding: 0 0 5px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        #faq-section .accordion-body p {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        #faq-section .viewall-btn {
+            font-size: 16px;
+        }
+
+    }
+
+    @media only screen and (min-device-width: 280px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+
+        #hero-slider .carousel-item .inner-content-sec {
+            margin: 20px auto;
+            padding: 0;
+            /* position: absolute;
+        top: 0%;
+        left: 2%; */
+            width: 95%;
+            display: block;
+            height: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec.raya-h-tag {
+            margin-top: 70px;
+        }
+
+        #hero-slider .carousel-item img {
+            height: auto;
+            -o-object-fit: unset;
+            object-fit: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec {
+            position: relative;
+            display: block;
+            width: 95%
+        }
+
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec .cimb-bank-logo {
+            width: auto !important;
+            height: 35px !important;
+            margin: 0 auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .title-sec img {
+            width: 250px;
+            margin: 0 auto 15px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-top: 0px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec p br {
+            display: unset;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec h1 br {
+            display: none;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec {
+            margin: 10px auto;
+            padding: 0;
+            text-align: center;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec .pink-btn,
+        #hero-slider .carousel-item .inner-content-sec .btn-sec .blue-btn {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 16px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .btn-sec img {
+            width: auto !important;
+            height: 35px !important;
+            margin: 0px auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing {
+            width: auto;
+            display: flex;
+            margin-top: 15px;
+            margin: 0 auto;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing h4 {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 31px;
+            padding-top: 5px;
+            position: relative;
+            margin-left: 48px;
+        }
+
+        #hero-slider .carousel-item .inner-content-sec .pricing h4 sup {
+            font-size: 24px;
+            line-height: 24px;
+            height: 40px;
+            left: -45px;
+            top: 0px;
+        }
+
+        .usp-section {
+            padding: 50px 0;
+        }
+
+        .usp-section .p-5 {
+            padding: 2rem 1rem 1rem !important;
+        }
+
+        .usp-section h2 img {
+            width: 55%;
+        }
+
+        .usp-section p {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 20px;
+        }
+
+        .usp-section p br {
+            display: none;
+        }
+
+        .usp-section .card {
+            flex-direction: unset;
+            display: flex;
+        }
+
+        .usp-section .card img {
+            max-width: 60px;
+        }
+
+        .usp-section .card .card-body {
+            padding: 0rem 0 0 1rem;
+        }
+
+        .usp-section .card .card-body h5 {
+            font-size: 16px;
+            line-height: 21px;
+            text-align: left;
+            margin-bottom: 5px !important;
+        }
+
+        .usp-section .card .card-body h5 br {
+            display: none;
+        }
+
+        .usp-section .card .card-body p {
+            font-size: 16px;
+            line-height: 18px;
+            text-align: left;
+            padding: 0;
+        }
+
+        .layer-plans .nav-tabs .nav-link {
+            font-size: 12px !important;
+            padding: 0.5rem 0.8rem !important;
+        }
+
+        .carousel-indicators {
+            margin-bottom: -30px !important;
+        }
+
+        .carousel-indicators [data-bs-target] {
+            width: 8px !important;
+            height: 8px !important;
+            border-radius: 100px;
+            border: 0;
+        }
+
+        #post-plan-card .carousel-indicators button {
+            background-color: #aaa;
+        }
+
+        #broadband-plan-card .carousel-indicators button {
+            background-color: #aaa;
+        }
+
+        .carousel-indicators button.active {
+            background-color: #FF0084 !important;
+        }
+
+        /* #prepaid-plans {
+            padding: 50px 0
+        }
+
+        .plan-titile h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        .plan-titile p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        #prepaid-plans .plan-inner-sec {
+            scroll-snap-type: x mandatory;
+            overflow-y: auto;
+            padding: 0px 0 20px;
+        }
+
+        #prepaid-plans .btn-prepaid {
+            width: 85%;
+        } */
+
+        #databck-rewards {
+            padding: 50px 0px;
+        }
+
+        #databck-rewards h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        #databck-rewards p {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 0 20px;
+        }
+
+        .data_rwd img {
+            width: 90%;
+        }
+
+        #easy-steps {
+            padding: 50px 0px 0;
+        }
+
+        #easy-steps .inner-sec {
+            margin: 20px 0;
+        }
+
+        #easy-steps .content {
+            width: 90%;
+            margin: 0 auto;
+            height: 140px;
+        }
+
+        #easy-steps h2 {
+            font-size: 28px;
+            line-height: 36px;
+        }
+
+        #easy-steps .step-mob-visual {
+            padding: 0px 50px;
+            width: 85%;
+        }
+
+        #easy-steps h3 {
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        #easy-steps h3 span {
+            background: #1A1E47;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 16px;
+        }
+
+        #easy-steps p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .getway {
+            scroll-snap-type: x mandatory;
+            overflow-y: auto;
+            padding: 0px 0 15px;
+        }
+
+
+
+        #faq-section {
+            padding: 50px 0px !important;
+        }
+
+        #faq-section h1 {
+            font-size: 26px;
+            line-height: 34px;
+            font-weight: 700;
+        }
+
+        #faq-section .accordion-item {
+            margin-bottom: 15px;
+        }
+
+        #faq-section .accordion-button {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 700;
+        }
+
+        #faq-section .accordion-body h4 {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 800;
+        }
+
+        #faq-section .accordion-body ul {
+            margin: 15px 0 0 15px;
+            padding: 0;
+        }
+
+        #faq-section .accordion-body li {
+            margin: 0;
+            padding: 0 0 5px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        #faq-section .accordion-body p {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        #faq-section .viewall-btn {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+    }
+</style>

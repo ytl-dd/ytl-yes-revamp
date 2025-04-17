@@ -1,0 +1,52 @@
+<script type="text/javascript" src="/wp-content/themes/yes-twentytwentyone/template-parts/ywos/assets/js/ywos.js"></script>
+<script type="text/javascript">
+    /**
+     * Function to check if page is loaded from back button
+     */
+    function pageShown(evt) {
+        if (evt.persisted) {
+            toggleOverlay(false);
+        }
+    }
+    window.addEventListener("pageshow", pageShown, false);
+
+    $(document).ready(function() {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get('trx_type') != null && url.searchParams.get('trx_type') == 'roving') {
+            $('a.btn-roving').removeClass('d-none');
+        } else {
+            $('a.btn-store').removeClass('d-none');
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    /**
+     * Function to check if page is loaded from back button
+    */
+    function pageShown(evt) {
+        if (evt.persisted) {
+            toggleOverlay(false);
+        }
+    }
+    window.addEventListener("pageshow", pageShown, false);
+</script>
+
+<script>
+    $('.moreless-button').click(function() {
+      $('.morelocation').slideToggle();
+    var imgv = $('.arrow-down').attr('val');
+    //console.log(imgv);
+      if ($('.arrow-down').attr('val') == "More Location") {
+    $('.arrow-up').show();
+     $('.arrow-down').hide();
+     $('.arrow-down').attr('val', 'sec');
+    //console.log("first");
+      } else {
+      $('.arrow-up').hide();
+     $('.arrow-down').show();
+     $('.arrow-down').attr('val', 'More Location');
+    //console.log("second");
+      }
+    });
+</script>
